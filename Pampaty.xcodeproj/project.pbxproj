@@ -3,27 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FFF307FEE890EC4CECEB717 /* Pods_Pampaty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0A94D567AC47615D671A96 /* Pods_Pampaty.framework */; };
+		FC94D72025D9104B000FF2B6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC94D71F25D9104B000FF2B6 /* SnapKit */; };
 		FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */; };
 		FCB12B2E25CB0A9E002ADAEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B2D25CB0A9E002ADAEF /* SceneDelegate.swift */; };
-		FCB12B3025CB0A9E002ADAEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B2F25CB0A9E002ADAEF /* ViewController.swift */; };
-		FCB12B3325CB0A9E002ADAEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB12B3125CB0A9E002ADAEF /* Main.storyboard */; };
 		FCB12B3525CB0A9F002ADAEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB12B3425CB0A9F002ADAEF /* Assets.xcassets */; };
 		FCB12B3825CB0A9F002ADAEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB12B3625CB0A9F002ADAEF /* LaunchScreen.storyboard */; };
+		FCB12B4525CB0C3D002ADAEF /* EasyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B4425CB0C3D002ADAEF /* EasyTimer.swift */; };
+		FCB12B4925CB0C57002ADAEF /* StartScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B4825CB0C57002ADAEF /* StartScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36C61CAC84B8BA361A4D0C57 /* Pods-Pampaty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pampaty.release.xcconfig"; path = "Target Support Files/Pods-Pampaty/Pods-Pampaty.release.xcconfig"; sourceTree = "<group>"; };
+		7B0A94D567AC47615D671A96 /* Pods_Pampaty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pampaty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4027EA12223B3FDE596B8EF /* Pods-Pampaty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pampaty.debug.xcconfig"; path = "Target Support Files/Pods-Pampaty/Pods-Pampaty.debug.xcconfig"; sourceTree = "<group>"; };
 		FCB12B2825CB0A9E002ADAEF /* Pampaty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pampaty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCB12B2D25CB0A9E002ADAEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCB12B2F25CB0A9E002ADAEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FCB12B3225CB0A9E002ADAEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCB12B3425CB0A9F002ADAEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCB12B3725CB0A9F002ADAEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCB12B3925CB0A9F002ADAEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCB12B4425CB0C3D002ADAEF /* EasyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTimer.swift; sourceTree = "<group>"; };
+		FCB12B4825CB0C57002ADAEF /* StartScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FFF307FEE890EC4CECEB717 /* Pods_Pampaty.framework in Frameworks */,
+				FC94D72025D9104B000FF2B6 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE64D0ECE7E4B7B44357112D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4027EA12223B3FDE596B8EF /* Pods-Pampaty.debug.xcconfig */,
+				36C61CAC84B8BA361A4D0C57 /* Pods-Pampaty.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E075C0AAD8A02FFC7A8BF9AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B0A94D567AC47615D671A96 /* Pods_Pampaty.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FCB12B1F25CB0A9E002ADAEF = {
 			isa = PBXGroup;
 			children = (
 				FCB12B2A25CB0A9E002ADAEF /* Pampaty */,
 				FCB12B2925CB0A9E002ADAEF /* Products */,
+				BE64D0ECE7E4B7B44357112D /* Pods */,
+				E075C0AAD8A02FFC7A8BF9AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +82,47 @@
 		FCB12B2A25CB0A9E002ADAEF /* Pampaty */ = {
 			isa = PBXGroup;
 			children = (
-				FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */,
-				FCB12B2D25CB0A9E002ADAEF /* SceneDelegate.swift */,
-				FCB12B2F25CB0A9E002ADAEF /* ViewController.swift */,
-				FCB12B3125CB0A9E002ADAEF /* Main.storyboard */,
+				FCB12B4B25CB0E89002ADAEF /* AppDefault */,
+				FCB12B4025CB0AB5002ADAEF /* Components */,
+				FCB12B4225CB0C1D002ADAEF /* View */,
 				FCB12B3425CB0A9F002ADAEF /* Assets.xcassets */,
-				FCB12B3625CB0A9F002ADAEF /* LaunchScreen.storyboard */,
 				FCB12B3925CB0A9F002ADAEF /* Info.plist */,
 			);
 			path = Pampaty;
+			sourceTree = "<group>";
+		};
+		FCB12B4025CB0AB5002ADAEF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FCB12B4325CB0C2C002ADAEF /* EasyTimer */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FCB12B4225CB0C1D002ADAEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCB12B4825CB0C57002ADAEF /* StartScreenVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCB12B4325CB0C2C002ADAEF /* EasyTimer */ = {
+			isa = PBXGroup;
+			children = (
+				FCB12B4425CB0C3D002ADAEF /* EasyTimer.swift */,
+			);
+			path = EasyTimer;
+			sourceTree = "<group>";
+		};
+		FCB12B4B25CB0E89002ADAEF /* AppDefault */ = {
+			isa = PBXGroup;
+			children = (
+				FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */,
+				FCB12B2D25CB0A9E002ADAEF /* SceneDelegate.swift */,
+				FCB12B3625CB0A9F002ADAEF /* LaunchScreen.storyboard */,
+			);
+			path = AppDefault;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +132,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCB12B3C25CB0A9F002ADAEF /* Build configuration list for PBXNativeTarget "Pampaty" */;
 			buildPhases = (
+				5DF15DF75A8D7CF9CAFC80FF /* [CP] Check Pods Manifest.lock */,
 				FCB12B2425CB0A9E002ADAEF /* Sources */,
 				FCB12B2525CB0A9E002ADAEF /* Frameworks */,
 				FCB12B2625CB0A9E002ADAEF /* Resources */,
@@ -83,6 +142,9 @@
 			dependencies = (
 			);
 			name = Pampaty;
+			packageProductDependencies = (
+				FC94D71F25D9104B000FF2B6 /* SnapKit */,
+			);
 			productName = Pampaty;
 			productReference = FCB12B2825CB0A9E002ADAEF /* Pampaty.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +172,9 @@
 				Base,
 			);
 			mainGroup = FCB12B1F25CB0A9E002ADAEF;
+			packageReferences = (
+				FC94D71E25D9104B000FF2B6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = FCB12B2925CB0A9E002ADAEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,34 +191,51 @@
 			files = (
 				FCB12B3825CB0A9F002ADAEF /* LaunchScreen.storyboard in Resources */,
 				FCB12B3525CB0A9F002ADAEF /* Assets.xcassets in Resources */,
-				FCB12B3325CB0A9E002ADAEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DF15DF75A8D7CF9CAFC80FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pampaty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FCB12B2425CB0A9E002ADAEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCB12B3025CB0A9E002ADAEF /* ViewController.swift in Sources */,
 				FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */,
+				FCB12B4525CB0C3D002ADAEF /* EasyTimer.swift in Sources */,
 				FCB12B2E25CB0A9E002ADAEF /* SceneDelegate.swift in Sources */,
+				FCB12B4925CB0C57002ADAEF /* StartScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FCB12B3125CB0A9E002ADAEF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FCB12B3225CB0A9E002ADAEF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FCB12B3625CB0A9F002ADAEF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +365,7 @@
 		};
 		FCB12B3D25CB0A9F002ADAEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4027EA12223B3FDE596B8EF /* Pods-Pampaty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +384,7 @@
 		};
 		FCB12B3E25CB0A9F002ADAEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36C61CAC84B8BA361A4D0C57 /* Pods-Pampaty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -339,6 +423,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC94D71E25D9104B000FF2B6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC94D71F25D9104B000FF2B6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC94D71E25D9104B000FF2B6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FCB12B2025CB0A9E002ADAEF /* Project object */;
 }
