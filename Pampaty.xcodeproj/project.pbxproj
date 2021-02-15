@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3FFF307FEE890EC4CECEB717 /* Pods_Pampaty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0A94D567AC47615D671A96 /* Pods_Pampaty.framework */; };
 		FC94D72025D9104B000FF2B6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC94D71F25D9104B000FF2B6 /* SnapKit */; };
+		FC94D72325D91C3F000FF2B6 /* TimerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94D72225D91C3F000FF2B6 /* TimerModels.swift */; };
 		FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */; };
 		FCB12B2E25CB0A9E002ADAEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B2D25CB0A9E002ADAEF /* SceneDelegate.swift */; };
 		FCB12B3525CB0A9F002ADAEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB12B3425CB0A9F002ADAEF /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		36C61CAC84B8BA361A4D0C57 /* Pods-Pampaty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pampaty.release.xcconfig"; path = "Target Support Files/Pods-Pampaty/Pods-Pampaty.release.xcconfig"; sourceTree = "<group>"; };
 		7B0A94D567AC47615D671A96 /* Pods_Pampaty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pampaty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4027EA12223B3FDE596B8EF /* Pods-Pampaty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pampaty.debug.xcconfig"; path = "Target Support Files/Pods-Pampaty/Pods-Pampaty.debug.xcconfig"; sourceTree = "<group>"; };
+		FC94D72225D91C3F000FF2B6 /* TimerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModels.swift; sourceTree = "<group>"; };
 		FCB12B2825CB0A9E002ADAEF /* Pampaty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pampaty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCB12B2D25CB0A9E002ADAEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC94D72625D92AED000FF2B6 /* BeforeStart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BeforeStart;
+			sourceTree = "<group>";
+		};
+		FC94D72725D92B00000FF2B6 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		FC94D72825D92B05000FF2B6 /* ChangeTeamPause */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChangeTeamPause;
+			sourceTree = "<group>";
+		};
+		FC94D72925D92B36000FF2B6 /* ResultScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResultScreen;
+			sourceTree = "<group>";
+		};
 		FCB12B1F25CB0A9E002ADAEF = {
 			isa = PBXGroup;
 			children = (
@@ -84,7 +114,7 @@
 			children = (
 				FCB12B4B25CB0E89002ADAEF /* AppDefault */,
 				FCB12B4025CB0AB5002ADAEF /* Components */,
-				FCB12B4225CB0C1D002ADAEF /* View */,
+				FCB12B4225CB0C1D002ADAEF /* Screens */,
 				FCB12B3425CB0A9F002ADAEF /* Assets.xcassets */,
 				FCB12B3925CB0A9F002ADAEF /* Info.plist */,
 			);
@@ -99,17 +129,22 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		FCB12B4225CB0C1D002ADAEF /* View */ = {
+		FCB12B4225CB0C1D002ADAEF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FC94D72625D92AED000FF2B6 /* BeforeStart */,
+				FC94D72925D92B36000FF2B6 /* ResultScreen */,
+				FC94D72825D92B05000FF2B6 /* ChangeTeamPause */,
+				FC94D72725D92B00000FF2B6 /* Game */,
 				FCB12B4825CB0C57002ADAEF /* StartScreenVC.swift */,
 			);
-			path = View;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		FCB12B4325CB0C2C002ADAEF /* EasyTimer */ = {
 			isa = PBXGroup;
 			children = (
+				FC94D72225D91C3F000FF2B6 /* TimerModels.swift */,
 				FCB12B4425CB0C3D002ADAEF /* EasyTimer.swift */,
 			);
 			path = EasyTimer;
@@ -230,6 +265,7 @@
 				FCB12B4525CB0C3D002ADAEF /* EasyTimer.swift in Sources */,
 				FCB12B2E25CB0A9E002ADAEF /* SceneDelegate.swift in Sources */,
 				FCB12B4925CB0C57002ADAEF /* StartScreenVC.swift in Sources */,
+				FC94D72325D91C3F000FF2B6 /* TimerModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

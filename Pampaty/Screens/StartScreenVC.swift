@@ -1,7 +1,9 @@
 import UIKit
+import SnapKit
 
 class StartScreenVC: UIViewController {
   
+  var numberOfsec = 0
   var timer = Timer()
   let timerInfoLabel: UILabel = {
     let label = UILabel()
@@ -45,43 +47,35 @@ class StartScreenVC: UIViewController {
     view.addSubview(slider)
     view.addSubview(startButton)
     
-    slider.addTarget(self, action: #selector(sliderValueChanged), for: .valueChanged)
     timerInfoLabel.text = String(slider.value)
+    slider.addTarget(self, action: #selector(sliderValueChanged), for: .valueChanged)
     startButton.addTarget(self, action: #selector(startTimer), for: .touchUpInside)
     
-    NSLayoutConstraint.activate([
-      timerInfoLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-      timerInfoLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-      
-      slider.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 30),
-      slider.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -30),
-      slider.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-      slider.topAnchor.constraint(equalTo: timerInfoLabel.bottomAnchor, constant: 40),
-      
-      startButton.topAnchor.constraint(equalTo: slider.bottomAnchor, constant: 40),
-      startButton.centerXAnchor.constraint(equalTo: slider.centerXAnchor),
-      startButton.widthAnchor.constraint(equalToConstant: 120),
-      startButton.heightAnchor.constraint(equalToConstant: 60)
-    ])
+    timerInfoLabel.snp.makeConstraints { (make) in
+      make.center.equalToSuperview()
+    }
+    slider.snp.makeConstraints { (make) in
+      make.left.equalTo(view.snp.left).offset(30)
+      make.right.equalTo(view.snp.right).offset(-30)
+      make.centerX.equalToSuperview()
+      make.top.equalTo(timerInfoLabel.snp.bottom).offset(40)
+    }
+    startButton.snp.makeConstraints { (make) in
+      make.top.equalTo(slider.snp.bottom).offset(40)
+      make.centerX.equalTo(slider.snp.centerX)
+      make.width.equalTo(120)
+      make.height.equalTo(60)
+    }
   }
   
   @objc func sliderValueChanged(sender: UISlider) {
     timerInfoLabel.text = String(sender.value)
   }
-
-  @objc func updateInfo(sender: Timer) {
-    // https://www.youtube.com/watch?v=CGnOe4bl8_A
-    var currentTime = slider.value
-    repeat {
-      currentTime -= 1
-      timerInfoLabel.text = String(currentTime)
-      print("SD - currentTime: \(currentTime)")
-    } while currentTime <= 0
-    timer.invalidate()
-  }
   
-  @objc func startTimer(sender: UIButton) {
-    timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateInfo), userInfo: nil, repeats: true)
+  @objc func startTimer() {
+    
+    EasyTimer.shared.runTimer()
   }
+
   
 }
