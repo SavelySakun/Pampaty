@@ -59,11 +59,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FC94D72625D92AED000FF2B6 /* BeforeStart */ = {
+		FC94D72625D92AED000FF2B6 /* GameSettings */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = BeforeStart;
+			path = GameSettings;
 			sourceTree = "<group>";
 		};
 		FC94D72725D92B00000FF2B6 /* Game */ = {
@@ -127,7 +127,7 @@
 		FCB12B4225CB0C1D002ADAEF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				FC94D72625D92AED000FF2B6 /* BeforeStart */,
+				FC94D72625D92AED000FF2B6 /* GameSettings */,
 				FC94D72925D92B36000FF2B6 /* ResultScreen */,
 				FC94D72825D92B05000FF2B6 /* ChangeTeamPause */,
 				FC94D72725D92B00000FF2B6 /* Game */,
