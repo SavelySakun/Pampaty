@@ -13,7 +13,12 @@
 		FCB12B2E25CB0A9E002ADAEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B2D25CB0A9E002ADAEF /* SceneDelegate.swift */; };
 		FCB12B3525CB0A9F002ADAEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB12B3425CB0A9F002ADAEF /* Assets.xcassets */; };
 		FCB12B3825CB0A9F002ADAEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB12B3625CB0A9F002ADAEF /* LaunchScreen.storyboard */; };
-		FCB12B4925CB0C57002ADAEF /* StartScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B4825CB0C57002ADAEF /* StartScreenVC.swift */; };
+		FCE8267D25DAC0EB0045D1D2 /* GameSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */; };
+		FCE8268225DAC1BE0045D1D2 /* Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */; };
+		FCE826A725DAC4610045D1D2 /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE826A625DAC4610045D1D2 /* DefaultCell.swift */; };
+		FCE826AC25DAC6730045D1D2 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE826AB25DAC6730045D1D2 /* UIUtils.swift */; };
+		FCE8290325DC4D0D0045D1D2 /* DefaultSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8290225DC4D0D0045D1D2 /* DefaultSectionHeaderView.swift */; };
+		FCE82C4225DD88F90045D1D2 /* GenericTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE82C4125DD88F90045D1D2 /* GenericTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +31,12 @@
 		FCB12B3425CB0A9F002ADAEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCB12B3725CB0A9F002ADAEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCB12B3925CB0A9F002ADAEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FCB12B4825CB0C57002ADAEF /* StartScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenVC.swift; sourceTree = "<group>"; };
+		FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsVC.swift; sourceTree = "<group>"; };
+		FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extension.swift"; sourceTree = "<group>"; };
+		FCE826A625DAC4610045D1D2 /* DefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCell.swift; sourceTree = "<group>"; };
+		FCE826AB25DAC6730045D1D2 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
+		FCE8290225DC4D0D0045D1D2 /* DefaultSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSectionHeaderView.swift; sourceTree = "<group>"; };
+		FCE82C4125DD88F90045D1D2 /* GenericTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,7 @@
 		FC94D72625D92AED000FF2B6 /* GameSettings */ = {
 			isa = PBXGroup;
 			children = (
+				FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */,
 			);
 			path = GameSettings;
 			sourceTree = "<group>";
@@ -109,19 +120,13 @@
 			isa = PBXGroup;
 			children = (
 				FCB12B4B25CB0E89002ADAEF /* AppDefault */,
-				FCB12B4025CB0AB5002ADAEF /* Components */,
+				FCE8268025DAC1A70045D1D2 /* Helpers */,
+				FCE8267A25DAC09C0045D1D2 /* Components */,
 				FCB12B4225CB0C1D002ADAEF /* Screens */,
 				FCB12B3425CB0A9F002ADAEF /* Assets.xcassets */,
 				FCB12B3925CB0A9F002ADAEF /* Info.plist */,
 			);
 			path = Pampaty;
-			sourceTree = "<group>";
-		};
-		FCB12B4025CB0AB5002ADAEF /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		FCB12B4225CB0C1D002ADAEF /* Screens */ = {
@@ -131,7 +136,6 @@
 				FC94D72925D92B36000FF2B6 /* ResultScreen */,
 				FC94D72825D92B05000FF2B6 /* ChangeTeamPause */,
 				FC94D72725D92B00000FF2B6 /* Game */,
-				FCB12B4825CB0C57002ADAEF /* StartScreenVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -144,6 +148,41 @@
 				FCB12B3625CB0A9F002ADAEF /* LaunchScreen.storyboard */,
 			);
 			path = AppDefault;
+			sourceTree = "<group>";
+		};
+		FCE8267A25DAC09C0045D1D2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FCE82C3C25DD804B0045D1D2 /* GenericTableView */,
+				FCE826A525DAC4500045D1D2 /* Cells */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FCE8268025DAC1A70045D1D2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */,
+				FCE826AB25DAC6730045D1D2 /* UIUtils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FCE826A525DAC4500045D1D2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FCE826A625DAC4610045D1D2 /* DefaultCell.swift */,
+				FCE8290225DC4D0D0045D1D2 /* DefaultSectionHeaderView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FCE82C3C25DD804B0045D1D2 /* GenericTableView */ = {
+			isa = PBXGroup;
+			children = (
+				FCE82C4125DD88F90045D1D2 /* GenericTableView.swift */,
+			);
+			path = GenericTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,9 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE826A725DAC4610045D1D2 /* DefaultCell.swift in Sources */,
+				FCE82C4225DD88F90045D1D2 /* GenericTableView.swift in Sources */,
 				FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */,
+				FCE826AC25DAC6730045D1D2 /* UIUtils.swift in Sources */,
 				FCB12B2E25CB0A9E002ADAEF /* SceneDelegate.swift in Sources */,
-				FCB12B4925CB0C57002ADAEF /* StartScreenVC.swift in Sources */,
+				FCE8267D25DAC0EB0045D1D2 /* GameSettingsVC.swift in Sources */,
+				FCE8268225DAC1BE0045D1D2 /* Color Extension.swift in Sources */,
+				FCE8290325DC4D0D0045D1D2 /* DefaultSectionHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
