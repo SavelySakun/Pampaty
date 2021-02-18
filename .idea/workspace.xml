@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="192473d9-f28e-470f-b78d-52cc65b3194c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Pampaty/Components/Cells/DefaultCell.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pampaty/Helpers/Color Extension.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pampaty/Helpers/UIUtils.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/GameSettingsVC.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/AppDefault/SceneDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/AppDefault/SceneDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/StartScreenVC.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty.xcodeproj/xcuserdata/savelysakun.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty.xcodeproj/xcuserdata/savelysakun.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +92,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="2_add_game_settings_vc_part1_cells" />
                       </list>
                     </value>
                   </entry>
@@ -109,6 +103,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Делал структуру файлов." />
