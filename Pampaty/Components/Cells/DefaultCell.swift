@@ -14,7 +14,6 @@ class DefaultCell: UITableViewCell {
   
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
-    setupCellStyle()
   }
   
   required init?(coder: NSCoder) {
@@ -24,17 +23,19 @@ class DefaultCell: UITableViewCell {
 }
 
 extension DefaultCell {
-  private func setupCellStyle() {
-    setupLabels()
+  private func setupCellLayout() {
+    setupLabelsAndAccessory()
+    setupConstraints()
   }
   
-  private func setupLabels() {
+  private func setupLabelsAndAccessory() {
     title.font = UIFont.systemFont(ofSize: 18, weight: .regular)
     subtitle.font = UIFont.systemFont(ofSize: 14, weight: .regular)
     subtitle.numberOfLines = 3
     subtitle.textColor = .systemGray
     accessoryDescription.font = UIFont.systemFont(ofSize: 14, weight: .regular)
     accessoryDescription.textAlignment = .right
+    accessoryDescription.textColor = .systemGray
     
     textContent = UIStackView(arrangedSubviews: [title, subtitle])
     textContent.axis = .vertical
@@ -69,7 +70,7 @@ extension DefaultCell {
         isAccessoryAvailable ? 12 : 0)
       make.centerY.equalTo(contentView.snp.centerY)
       make.right.equalTo(contentView.snp.right).offset(
-        isAccessoryAvailable ? -12 : 0)
+        isAccessoryAvailable ? -14 : 0)
       make.width.equalTo(accessoryWidth)
     }
   }
@@ -85,7 +86,7 @@ extension DefaultCell {
     accessoryDescription.text = item.accessoryDescription
     selectionStyle = item.selectionStyle
     
-    setupConstraints()
+    setupCellLayout()
   }
   
 }

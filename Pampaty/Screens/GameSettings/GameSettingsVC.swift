@@ -44,8 +44,9 @@ extension GameSettingsVC: UITableViewDataSource, UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-    let item = screenVM.tableSections[indexPath.section].items[indexPath.row]
+    var item = screenVM.tableSections[indexPath.section].items[indexPath.row]
     let cellId = DefaultCell().cellReuseIdentifier
+    setupDelegates(for: &item)
 
     if let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? DefaultCell {
       cell.setup(withItem: item)
@@ -62,4 +63,17 @@ extension GameSettingsVC: UITableViewDataSource, UITableViewDelegate {
     screenVM.tableSections[indexPath.section].items[indexPath.row].onCellSelection()
   }
   
+  private func setupDelegates(for item: inout CellViewModelProtocol) {
+    item.delegate = self
+  }
+}
+
+extension GameSettingsVC: CellProtocol {
+  func onValueChanged() {
+    
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
+      self.tableView.reloadData()
+    }
+    
+  }
 }

@@ -1,20 +1,20 @@
 import UIKit
 
 class GameSettingsVM {
-  let tableSections: [TableSection] = [
+  var tableSections: [TableSection] = [
     
     TableSection(title: "Команды", items: [
       NumberOfTeamsCellVM(),
-      NumberOfTeamsCellVM()
+      TeamNamesCellVM()
     ]),
     
     TableSection(title: "Игра", items: [
       NumberOfTeamsCellVM(),
-      NumberOfTeamsCellVM()
+      RoundNumbersCellVM()
     ]),
     
     TableSection(title: "Фишки", items: [
-      NumberOfTeamsCellVM()
+      ModificationCellVM()
     ])
   ]
 }
