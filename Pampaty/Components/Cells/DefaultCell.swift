@@ -8,6 +8,7 @@ class DefaultCell: UITableViewCell {
   let cellReuseIdentifier = "DefaultCell"
   private var title = UILabel()
   private var subtitle = UILabel()
+  private var textContent = UIStackView()
   private var accessory = UIView()
   private var accessoryDescription = UILabel()
   
@@ -30,19 +31,22 @@ extension DefaultCell {
   private func setupLabels() {
     title.font = UIFont.systemFont(ofSize: 18, weight: .regular)
     subtitle.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+    subtitle.numberOfLines = 3
+    subtitle.textColor = .systemGray
     accessoryDescription.font = UIFont.systemFont(ofSize: 14, weight: .regular)
     accessoryDescription.textAlignment = .right
+    
+    textContent = UIStackView(arrangedSubviews: [title, subtitle])
+    textContent.axis = .vertical
+    textContent.spacing = 8
+    textContent.distribution = .equalSpacing
+    textContent.isUserInteractionEnabled = true
   }
   
   private func setupConstraints() {
     let isAccessoryAvailable = accessory.frame.width > 0
     let accessoryDescriptionWidth = accessoryDescription.systemLayoutSizeFitting(.zero)
     let accessoryWidth = accessory.systemLayoutSizeFitting(.zero)
-    
-    let textContent = UIStackView(arrangedSubviews: [title, subtitle])
-    textContent.axis = .vertical
-    textContent.spacing = 8
-    textContent.distribution = .fillProportionally
     
     contentView.addSubview(textContent)
     contentView.addSubview(accessory)
@@ -79,7 +83,7 @@ extension DefaultCell {
     subtitle.text = item.subtitle
     accessory = item.accessory ?? UIView()
     accessoryDescription.text = item.accessoryDescription
-    
+    selectionStyle = item.selectionStyle
     
     setupConstraints()
   }

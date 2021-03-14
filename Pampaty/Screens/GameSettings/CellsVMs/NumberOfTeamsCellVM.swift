@@ -2,11 +2,11 @@ import UIKit
 
 class NumberOfTeamsCellVM: CellViewModelProtocol {
 
-  var title: String = "Количество КоличествоКоличествоКоличествоКоличество Количество"
-  var subtitle: String? = "Количество Количество Количество Количество  "
+  var title: String = "Модификаторы"
+  var subtitle: String? = "Случайные условия для команд, усложняющие прохождение раунда."
   var accessory: UIView? = UISwitch()
+  var accessoryDescription: String? = nil
   var selectionStyle: UITableViewCell.SelectionStyle = .none
-  var accessoryDescription: String?
   
   func onCellSelection() {
     print("SD - cell selection happened")
