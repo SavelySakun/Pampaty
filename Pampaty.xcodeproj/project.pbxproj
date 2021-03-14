@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3FFF307FEE890EC4CECEB717 /* Pods_Pampaty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0A94D567AC47615D671A96 /* Pods_Pampaty.framework */; };
-		FC141A0525E53B4D0009904F /* SettingsNumberOfTeamsCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC141A0425E53B4D0009904F /* SettingsNumberOfTeamsCellVM.swift */; };
+		FC141A0525E53B4D0009904F /* NumberOfTeamsCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC141A0425E53B4D0009904F /* NumberOfTeamsCellVM.swift */; };
 		FC48DB3925DEBBE00024CB87 /* TableViewItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */; };
 		FC7591C225F61511008A9A54 /* RootNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591C125F61511008A9A54 /* RootNavigationVC.swift */; };
 		FC7591C825F616CB008A9A54 /* GameSettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */; };
-		FC7591CD25F6270F008A9A54 /* DefaultCellVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591CC25F6270F008A9A54 /* DefaultCellVMProtocol.swift */; };
+		FC7591CD25F6270F008A9A54 /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */; };
 		FC7591D425F63387008A9A54 /* DefaultPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591D325F63387008A9A54 /* DefaultPicker.swift */; };
 		FC94D72025D9104B000FF2B6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC94D71F25D9104B000FF2B6 /* SnapKit */; };
 		FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */; };
 		FCB12B2E25CB0A9E002ADAEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B2D25CB0A9E002ADAEF /* SceneDelegate.swift */; };
 		FCB12B3525CB0A9F002ADAEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB12B3425CB0A9F002ADAEF /* Assets.xcassets */; };
 		FCB12B3825CB0A9F002ADAEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB12B3625CB0A9F002ADAEF /* LaunchScreen.storyboard */; };
+		FCCB6A0125FE06DF006084A7 /* SettingsCellViewModelNumberOfTeamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCB6A0025FE06DF006084A7 /* SettingsCellViewModelNumberOfTeamsTests.swift */; };
 		FCE8267D25DAC0EB0045D1D2 /* GameSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */; };
 		FCE8268225DAC1BE0045D1D2 /* Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */; };
 		FCE826A725DAC4610045D1D2 /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE826A625DAC4610045D1D2 /* DefaultCell.swift */; };
@@ -26,15 +27,25 @@
 		FCE82C4225DD88F90045D1D2 /* GenericTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE82C4125DD88F90045D1D2 /* GenericTableView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FCCB69F125FE0657006084A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCB12B2025CB0A9E002ADAEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCB12B2725CB0A9E002ADAEF;
+			remoteInfo = Pampaty;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		36C61CAC84B8BA361A4D0C57 /* Pods-Pampaty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pampaty.release.xcconfig"; path = "Target Support Files/Pods-Pampaty/Pods-Pampaty.release.xcconfig"; sourceTree = "<group>"; };
 		7B0A94D567AC47615D671A96 /* Pods_Pampaty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pampaty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4027EA12223B3FDE596B8EF /* Pods-Pampaty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pampaty.debug.xcconfig"; path = "Target Support Files/Pods-Pampaty/Pods-Pampaty.debug.xcconfig"; sourceTree = "<group>"; };
-		FC141A0425E53B4D0009904F /* SettingsNumberOfTeamsCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNumberOfTeamsCellVM.swift; sourceTree = "<group>"; };
+		FC141A0425E53B4D0009904F /* NumberOfTeamsCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfTeamsCellVM.swift; sourceTree = "<group>"; };
 		FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewItems.swift; sourceTree = "<group>"; };
 		FC7591C125F61511008A9A54 /* RootNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationVC.swift; sourceTree = "<group>"; };
 		FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsVM.swift; sourceTree = "<group>"; };
-		FC7591CC25F6270F008A9A54 /* DefaultCellVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCellVMProtocol.swift; sourceTree = "<group>"; };
+		FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
 		FC7591D325F63387008A9A54 /* DefaultPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPicker.swift; sourceTree = "<group>"; };
 		FCB12B2825CB0A9E002ADAEF /* Pampaty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pampaty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +53,9 @@
 		FCB12B3425CB0A9F002ADAEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCB12B3725CB0A9F002ADAEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCB12B3925CB0A9F002ADAEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCCB69EC25FE0657006084A7 /* PampatyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PampatyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCB69F025FE0657006084A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCCB6A0025FE06DF006084A7 /* SettingsCellViewModelNumberOfTeamsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModelNumberOfTeamsTests.swift; sourceTree = "<group>"; };
 		FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsVC.swift; sourceTree = "<group>"; };
 		FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extension.swift"; sourceTree = "<group>"; };
 		FCE826A625DAC4610045D1D2 /* DefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCell.swift; sourceTree = "<group>"; };
@@ -56,6 +70,13 @@
 			files = (
 				3FFF307FEE890EC4CECEB717 /* Pods_Pampaty.framework in Frameworks */,
 				FC94D72025D9104B000FF2B6 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCB69E925FE0657006084A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +119,7 @@
 		FC75940525F7C5FA008A9A54 /* CellsVMs */ = {
 			isa = PBXGroup;
 			children = (
-				FC141A0425E53B4D0009904F /* SettingsNumberOfTeamsCellVM.swift */,
+				FC141A0425E53B4D0009904F /* NumberOfTeamsCellVM.swift */,
 			);
 			path = CellsVMs;
 			sourceTree = "<group>";
@@ -117,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				FCB12B2A25CB0A9E002ADAEF /* Pampaty */,
+				FCCB69ED25FE0657006084A7 /* PampatyTests */,
 				FCB12B2925CB0A9E002ADAEF /* Products */,
 				BE64D0ECE7E4B7B44357112D /* Pods */,
 				E075C0AAD8A02FFC7A8BF9AE /* Frameworks */,
@@ -127,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				FCB12B2825CB0A9E002ADAEF /* Pampaty.app */,
+				FCCB69EC25FE0657006084A7 /* PampatyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,7 +162,6 @@
 				FCE8267A25DAC09C0045D1D2 /* Components */,
 				FCB12B4225CB0C1D002ADAEF /* Screens */,
 				FCB12B3425CB0A9F002ADAEF /* Assets.xcassets */,
-				FCB12B3925CB0A9F002ADAEF /* Info.plist */,
 			);
 			path = Pampaty;
 			sourceTree = "<group>";
@@ -159,8 +181,34 @@
 				FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */,
 				FCB12B2D25CB0A9E002ADAEF /* SceneDelegate.swift */,
 				FCB12B3625CB0A9F002ADAEF /* LaunchScreen.storyboard */,
+				FCB12B3925CB0A9F002ADAEF /* Info.plist */,
 			);
 			path = AppDefault;
+			sourceTree = "<group>";
+		};
+		FCCB69ED25FE0657006084A7 /* PampatyTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCCB69FC25FE0683006084A7 /* Screens */,
+				FCCB69F025FE0657006084A7 /* Info.plist */,
+			);
+			path = PampatyTests;
+			sourceTree = "<group>";
+		};
+		FCCB69FC25FE0683006084A7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FCCB69FF25FE068C006084A7 /* Settings */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FCCB69FF25FE068C006084A7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FCCB6A0025FE06DF006084A7 /* SettingsCellViewModelNumberOfTeamsTests.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		FCE8267A25DAC09C0045D1D2 /* Components */ = {
@@ -195,7 +243,7 @@
 			children = (
 				FCE82C4125DD88F90045D1D2 /* GenericTableView.swift */,
 				FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */,
-				FC7591CC25F6270F008A9A54 /* DefaultCellVMProtocol.swift */,
+				FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */,
 			);
 			path = GenericTableView;
 			sourceTree = "<group>";
@@ -224,6 +272,24 @@
 			productReference = FCB12B2825CB0A9E002ADAEF /* Pampaty.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FCCB69EB25FE0657006084A7 /* PampatyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCCB69F525FE0657006084A7 /* Build configuration list for PBXNativeTarget "PampatyTests" */;
+			buildPhases = (
+				FCCB69E825FE0657006084A7 /* Sources */,
+				FCCB69E925FE0657006084A7 /* Frameworks */,
+				FCCB69EA25FE0657006084A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCCB69F225FE0657006084A7 /* PBXTargetDependency */,
+			);
+			name = PampatyTests;
+			productName = PampatyTests;
+			productReference = FCCB69EC25FE0657006084A7 /* PampatyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -235,6 +301,11 @@
 				TargetAttributes = {
 					FCB12B2725CB0A9E002ADAEF = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					FCCB69EB25FE0657006084A7 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+						TestTargetID = FCB12B2725CB0A9E002ADAEF;
 					};
 				};
 			};
@@ -255,6 +326,7 @@
 			projectRoot = "";
 			targets = (
 				FCB12B2725CB0A9E002ADAEF /* Pampaty */,
+				FCCB69EB25FE0657006084A7 /* PampatyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -266,6 +338,13 @@
 			files = (
 				FCB12B3825CB0A9F002ADAEF /* LaunchScreen.storyboard in Resources */,
 				FCB12B3525CB0A9F002ADAEF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCB69EA25FE0657006084A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +384,7 @@
 				FCE826A725DAC4610045D1D2 /* DefaultCell.swift in Sources */,
 				FCE82C4225DD88F90045D1D2 /* GenericTableView.swift in Sources */,
 				FC48DB3925DEBBE00024CB87 /* TableViewItems.swift in Sources */,
-				FC141A0525E53B4D0009904F /* SettingsNumberOfTeamsCellVM.swift in Sources */,
+				FC141A0525E53B4D0009904F /* NumberOfTeamsCellVM.swift in Sources */,
 				FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */,
 				FCE826AC25DAC6730045D1D2 /* UIUtils.swift in Sources */,
 				FC7591C225F61511008A9A54 /* RootNavigationVC.swift in Sources */,
@@ -313,11 +392,27 @@
 				FCE8267D25DAC0EB0045D1D2 /* GameSettingsVC.swift in Sources */,
 				FC7591C825F616CB008A9A54 /* GameSettingsVM.swift in Sources */,
 				FCE8268225DAC1BE0045D1D2 /* Color Extension.swift in Sources */,
-				FC7591CD25F6270F008A9A54 /* DefaultCellVMProtocol.swift in Sources */,
+				FC7591CD25F6270F008A9A54 /* CellViewModelProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCCB69E825FE0657006084A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCB6A0125FE06DF006084A7 /* SettingsCellViewModelNumberOfTeamsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCCB69F225FE0657006084A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCB12B2725CB0A9E002ADAEF /* Pampaty */;
+			targetProxy = FCCB69F125FE0657006084A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FCB12B3625CB0A9F002ADAEF /* LaunchScreen.storyboard */ = {
@@ -454,7 +549,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Pampaty/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Pampaty/AppDefault/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,7 +568,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Pampaty/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Pampaty/AppDefault/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,6 +577,47 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCCB69F325FE0657006084A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PampatyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sava.PampatyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pampaty.app/Pampaty";
+			};
+			name = Debug;
+		};
+		FCCB69F425FE0657006084A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PampatyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sava.PampatyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pampaty.app/Pampaty";
 			};
 			name = Release;
 		};
@@ -502,6 +638,15 @@
 			buildConfigurations = (
 				FCB12B3D25CB0A9F002ADAEF /* Debug */,
 				FCB12B3E25CB0A9F002ADAEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCCB69F525FE0657006084A7 /* Build configuration list for PBXNativeTarget "PampatyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCB69F325FE0657006084A7 /* Debug */,
+				FCCB69F425FE0657006084A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

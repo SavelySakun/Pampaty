@@ -14,13 +14,7 @@ enum CellType {
 
 struct TableSection {
   var title: String
-  var items: [CellItem]
-}
-
-struct CellItem {
-  var title: String
-  var subtitle: String?
-  var vm: DefaultCellVMProtocol?
+  var items: [CellViewModelProtocol]
 }
 
 

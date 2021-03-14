@@ -9,10 +9,8 @@ class GameSettingsVC: UIViewController {
     super.viewDidLoad()
     setupLayout()
   }
-  
 }
 
-// MARK: - Layout
 extension GameSettingsVC {
   private func setupLayout() {
     
@@ -24,8 +22,8 @@ extension GameSettingsVC {
   
   private func setupTable() {
     tableView.register(DefaultCell.self, forCellReuseIdentifier: DefaultCell().cellReuseIdentifier)
-    
     tableView.dataSource = self
+    tableView.delegate = self
     view.addSubview(tableView)
     
     tableView.snp.makeConstraints { (make) in
@@ -35,7 +33,6 @@ extension GameSettingsVC {
   }
 }
 
-// MARK: - TableDelegate & TableDataSource
 extension GameSettingsVC: UITableViewDataSource, UITableViewDelegate {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     screenVM.tableSections[section].items.count
@@ -46,12 +43,12 @@ extension GameSettingsVC: UITableViewDataSource, UITableViewDelegate {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    if var cell = tableView.dequeueReusableCell(withIdentifier: DefaultCell().cellReuseIdentifier, for: indexPath) as? DefaultCell {
-      
-      cell = DefaultCell(style: .subtitle, reuseIdentifier: DefaultCell().cellReuseIdentifier)
-      
-      cell.setupCell(item: screenVM.tableSections[indexPath.section].items[indexPath.row])
-      
+    
+    let item = screenVM.tableSections[indexPath.section].items[indexPath.row]
+    let cellId = DefaultCell().cellReuseIdentifier
+
+    if let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? DefaultCell {
+      cell.setup(withItem: item)
       return cell
     }
     return UITableViewCell()
@@ -61,5 +58,8 @@ extension GameSettingsVC: UITableViewDataSource, UITableViewDelegate {
     return screenVM.tableSections[section].title
   }
   
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    screenVM.tableSections[indexPath.section].items[indexPath.row].onCellSelection()
+  }
   
 }

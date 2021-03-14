@@ -3,17 +3,17 @@
 import UIKit
 import SnapKit
 
-/// Cell with title and subtitle.
-/// Use it if you need cell without additional elements like buttons or something else.
 class DefaultCell: UITableViewCell {
   
-  // MARK: - Properties
   let cellReuseIdentifier = "DefaultCell"
+  private var title = UILabel()
+  private var subtitle = UILabel()
+  private var accessory = UIView()
+  private var accessoryDescription = UILabel()
   
-  // MARK: - Lifecycle
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
-    
+    setupCellStyle()
   }
   
   required init?(coder: NSCoder) {
@@ -22,19 +22,66 @@ class DefaultCell: UITableViewCell {
   
 }
 
-// MARK: - Layout setup
+extension DefaultCell {
+  private func setupCellStyle() {
+    setupLabels()
+  }
+  
+  private func setupLabels() {
+    title.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+    subtitle.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+    accessoryDescription.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+    accessoryDescription.textAlignment = .right
+  }
+  
+  private func setupConstraints() {
+    let isAccessoryAvailable = accessory.frame.width > 0
+    let accessoryDescriptionWidth = accessoryDescription.systemLayoutSizeFitting(.zero)
+    let accessoryWidth = accessory.systemLayoutSizeFitting(.zero)
+    
+    let textContent = UIStackView(arrangedSubviews: [title, subtitle])
+    textContent.axis = .vertical
+    textContent.spacing = 8
+    textContent.distribution = .fillProportionally
+    
+    contentView.addSubview(textContent)
+    contentView.addSubview(accessory)
+    contentView.addSubview(accessoryDescription)
+    
+    textContent.snp.makeConstraints { (make) in
+      make.left.equalTo(contentView.snp.left).offset(12)
+      make.top.equalTo(contentView.snp.top).offset(12)
+      make.bottom.equalTo(contentView.snp.bottom).offset(-12)
+    }
+    
+    accessoryDescription.snp.makeConstraints { (make) in
+      make.left.equalTo(textContent.snp.right).offset(12)
+      make.centerY.equalTo(textContent.snp.centerY)
+      make.width.equalTo(accessoryDescriptionWidth)
+    }
+    
+    accessory.snp.makeConstraints { (make) in
+      make.left.equalTo(accessoryDescription.snp.right).offset(
+        isAccessoryAvailable ? 12 : 0)
+      make.centerY.equalTo(contentView.snp.centerY)
+      make.right.equalTo(contentView.snp.right).offset(
+        isAccessoryAvailable ? -12 : 0)
+      make.width.equalTo(accessoryWidth)
+    }
+  }
+  
+}
+
 extension DefaultCell {
 
-  func setupCell(item: CellItem) {
+  func setup(withItem item: CellViewModelProtocol) {
+    title.text = item.title
+    subtitle.text = item.subtitle
+    accessory = item.accessory ?? UIView()
+    accessoryDescription.text = item.accessoryDescription
     
-    var content = defaultContentConfiguration()
-    content.text = item.title
-    content.secondaryText = item.subtitle
-    content.secondaryTextProperties.font = UIFont.systemFont(ofSize: 14)
-    content.textToSecondaryTextVerticalPadding = 8
-    content.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 12, leading: 0, bottom: 12, trailing: 12)
-    accessoryView = item.vm?.getAccessory() as? UIView
-    contentConfiguration = content
+    
+    setupConstraints()
   }
   
 }
