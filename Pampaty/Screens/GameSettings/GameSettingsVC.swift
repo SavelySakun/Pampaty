@@ -2,37 +2,30 @@ import UIKit
 
 class GameSettingsVC: UIViewController {
   
-  // MARK: - Properties
-  var tableView: GenericTableView<String, DefaultCell>!
-  let items = Array(repeating: "pampaty", count: 5)
+  var tableView = UITableView(frame: .zero, style: .insetGrouped)
+  let screenVM = GameSettingsVM()
   
-  // MARK: - Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
     setupLayout()
   }
   
-  
-  
-  
 }
 
-// MARK: - Layout setup
+// MARK: - Layout
 extension GameSettingsVC {
   private func setupLayout() {
     
+    title = "Настройки игры"
     view.backgroundColor = .defaultGray
     
     setupTable()
-    
   }
   
   private func setupTable() {
-    tableView = GenericTableView(frame: .zero, style: .plain, items: items, config: { (item, cell) in
-      cell.textLabel?.text = item
-    }, selectHandler: { (item) in
-      print(item)
-    })
+    tableView.register(DefaultCell.self, forCellReuseIdentifier: DefaultCell().cellReuseIdentifier)
+    
+    tableView.dataSource = self
     view.addSubview(tableView)
     
     tableView.snp.makeConstraints { (make) in
@@ -42,28 +35,31 @@ extension GameSettingsVC {
   }
 }
 
+// MARK: - TableDelegate & TableDataSource
 extension GameSettingsVC: UITableViewDataSource, UITableViewDelegate {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    3
+    screenVM.tableSections[section].items.count
   }
   
   func numberOfSections(in tableView: UITableView) -> Int {
-    3
+    screenVM.tableSections.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    if let cell = tableView.dequeueReusableCell(withIdentifier: DefaultCell().cellReuseIdentifier, for: indexPath) as? DefaultCell {
+    if var cell = tableView.dequeueReusableCell(withIdentifier: DefaultCell().cellReuseIdentifier, for: indexPath) as? DefaultCell {
+      
+      cell = DefaultCell(style: .subtitle, reuseIdentifier: DefaultCell().cellReuseIdentifier)
+      
+      cell.setupCell(item: screenVM.tableSections[indexPath.section].items[indexPath.row])
+      
       return cell
     }
-    
     return UITableViewCell()
   }
   
-  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-    let sectionHeaderView = DefaultSectionHeaderView()
-    
-    sectionHeaderView.title.text = "Команды".uppercased()
-    return sectionHeaderView
+  func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    return screenVM.tableSections[section].title
   }
+  
   
 }

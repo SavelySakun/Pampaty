@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3FFF307FEE890EC4CECEB717 /* Pods_Pampaty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0A94D567AC47615D671A96 /* Pods_Pampaty.framework */; };
+		FC141A0525E53B4D0009904F /* SettingsNumberOfTeamsCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC141A0425E53B4D0009904F /* SettingsNumberOfTeamsCellVM.swift */; };
+		FC48DB3925DEBBE00024CB87 /* TableViewItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */; };
+		FC7591C225F61511008A9A54 /* RootNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591C125F61511008A9A54 /* RootNavigationVC.swift */; };
+		FC7591C825F616CB008A9A54 /* GameSettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */; };
+		FC7591CD25F6270F008A9A54 /* DefaultCellVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591CC25F6270F008A9A54 /* DefaultCellVMProtocol.swift */; };
+		FC7591D425F63387008A9A54 /* DefaultPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591D325F63387008A9A54 /* DefaultPicker.swift */; };
 		FC94D72025D9104B000FF2B6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC94D71F25D9104B000FF2B6 /* SnapKit */; };
 		FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */; };
 		FCB12B2E25CB0A9E002ADAEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B2D25CB0A9E002ADAEF /* SceneDelegate.swift */; };
@@ -17,7 +23,6 @@
 		FCE8268225DAC1BE0045D1D2 /* Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */; };
 		FCE826A725DAC4610045D1D2 /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE826A625DAC4610045D1D2 /* DefaultCell.swift */; };
 		FCE826AC25DAC6730045D1D2 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE826AB25DAC6730045D1D2 /* UIUtils.swift */; };
-		FCE8290325DC4D0D0045D1D2 /* DefaultSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8290225DC4D0D0045D1D2 /* DefaultSectionHeaderView.swift */; };
 		FCE82C4225DD88F90045D1D2 /* GenericTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE82C4125DD88F90045D1D2 /* GenericTableView.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +30,12 @@
 		36C61CAC84B8BA361A4D0C57 /* Pods-Pampaty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pampaty.release.xcconfig"; path = "Target Support Files/Pods-Pampaty/Pods-Pampaty.release.xcconfig"; sourceTree = "<group>"; };
 		7B0A94D567AC47615D671A96 /* Pods_Pampaty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pampaty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4027EA12223B3FDE596B8EF /* Pods-Pampaty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pampaty.debug.xcconfig"; path = "Target Support Files/Pods-Pampaty/Pods-Pampaty.debug.xcconfig"; sourceTree = "<group>"; };
+		FC141A0425E53B4D0009904F /* SettingsNumberOfTeamsCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNumberOfTeamsCellVM.swift; sourceTree = "<group>"; };
+		FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewItems.swift; sourceTree = "<group>"; };
+		FC7591C125F61511008A9A54 /* RootNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationVC.swift; sourceTree = "<group>"; };
+		FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsVM.swift; sourceTree = "<group>"; };
+		FC7591CC25F6270F008A9A54 /* DefaultCellVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCellVMProtocol.swift; sourceTree = "<group>"; };
+		FC7591D325F63387008A9A54 /* DefaultPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPicker.swift; sourceTree = "<group>"; };
 		FCB12B2825CB0A9E002ADAEF /* Pampaty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pampaty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCB12B2D25CB0A9E002ADAEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +46,6 @@
 		FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extension.swift"; sourceTree = "<group>"; };
 		FCE826A625DAC4610045D1D2 /* DefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCell.swift; sourceTree = "<group>"; };
 		FCE826AB25DAC6730045D1D2 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
-		FCE8290225DC4D0D0045D1D2 /* DefaultSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSectionHeaderView.swift; sourceTree = "<group>"; };
 		FCE82C4125DD88F90045D1D2 /* GenericTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,33 +79,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC7591C025F614F2008A9A54 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FC7591C125F61511008A9A54 /* RootNavigationVC.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		FC7591D225F6336C008A9A54 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FC7591D325F63387008A9A54 /* DefaultPicker.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FC75940525F7C5FA008A9A54 /* CellsVMs */ = {
+			isa = PBXGroup;
+			children = (
+				FC141A0425E53B4D0009904F /* SettingsNumberOfTeamsCellVM.swift */,
+			);
+			path = CellsVMs;
+			sourceTree = "<group>";
+		};
 		FC94D72625D92AED000FF2B6 /* GameSettings */ = {
 			isa = PBXGroup;
 			children = (
+				FC75940525F7C5FA008A9A54 /* CellsVMs */,
 				FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */,
+				FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */,
 			);
 			path = GameSettings;
-			sourceTree = "<group>";
-		};
-		FC94D72725D92B00000FF2B6 /* Game */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Game;
-			sourceTree = "<group>";
-		};
-		FC94D72825D92B05000FF2B6 /* ChangeTeamPause */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ChangeTeamPause;
-			sourceTree = "<group>";
-		};
-		FC94D72925D92B36000FF2B6 /* ResultScreen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ResultScreen;
 			sourceTree = "<group>";
 		};
 		FCB12B1F25CB0A9E002ADAEF = {
@@ -132,10 +147,8 @@
 		FCB12B4225CB0C1D002ADAEF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FC7591C025F614F2008A9A54 /* Navigation */,
 				FC94D72625D92AED000FF2B6 /* GameSettings */,
-				FC94D72925D92B36000FF2B6 /* ResultScreen */,
-				FC94D72825D92B05000FF2B6 /* ChangeTeamPause */,
-				FC94D72725D92B00000FF2B6 /* Game */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -153,6 +166,7 @@
 		FCE8267A25DAC09C0045D1D2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				FC7591D225F6336C008A9A54 /* Other */,
 				FCE82C3C25DD804B0045D1D2 /* GenericTableView */,
 				FCE826A525DAC4500045D1D2 /* Cells */,
 			);
@@ -172,7 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				FCE826A625DAC4610045D1D2 /* DefaultCell.swift */,
-				FCE8290225DC4D0D0045D1D2 /* DefaultSectionHeaderView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -181,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				FCE82C4125DD88F90045D1D2 /* GenericTableView.swift */,
+				FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */,
+				FC7591CC25F6270F008A9A54 /* DefaultCellVMProtocol.swift */,
 			);
 			path = GenericTableView;
 			sourceTree = "<group>";
@@ -286,14 +301,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC7591D425F63387008A9A54 /* DefaultPicker.swift in Sources */,
 				FCE826A725DAC4610045D1D2 /* DefaultCell.swift in Sources */,
 				FCE82C4225DD88F90045D1D2 /* GenericTableView.swift in Sources */,
+				FC48DB3925DEBBE00024CB87 /* TableViewItems.swift in Sources */,
+				FC141A0525E53B4D0009904F /* SettingsNumberOfTeamsCellVM.swift in Sources */,
 				FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */,
 				FCE826AC25DAC6730045D1D2 /* UIUtils.swift in Sources */,
+				FC7591C225F61511008A9A54 /* RootNavigationVC.swift in Sources */,
 				FCB12B2E25CB0A9E002ADAEF /* SceneDelegate.swift in Sources */,
 				FCE8267D25DAC0EB0045D1D2 /* GameSettingsVC.swift in Sources */,
+				FC7591C825F616CB008A9A54 /* GameSettingsVM.swift in Sources */,
 				FCE8268225DAC1BE0045D1D2 /* Color Extension.swift in Sources */,
-				FCE8290325DC4D0D0045D1D2 /* DefaultSectionHeaderView.swift in Sources */,
+				FC7591CD25F6270F008A9A54 /* DefaultCellVMProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
