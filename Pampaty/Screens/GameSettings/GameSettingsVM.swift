@@ -9,7 +9,7 @@ class GameSettingsVM {
     ]),
     
     TableSection(title: "Игра", items: [
-      NumberOfTeamsCellVM(),
+      RoundTimingCellVM(),
       RoundNumbersCellVM()
     ]),
     

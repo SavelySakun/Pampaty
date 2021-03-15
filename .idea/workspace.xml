@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="192473d9-f28e-470f-b78d-52cc65b3194c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/git.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/RoundTimingCellVM.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty.xcodeproj/xcuserdata/savelysakun.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty.xcodeproj/xcuserdata/savelysakun.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/AppDefault/Base.lproj/LaunchScreen.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/AppDefault/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Components/Cells/DefaultCell.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Components/Cells/DefaultCell.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Components/Other/DefaultPicker.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Components/Other/SmallPicker.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/GameSettingsVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/GameSettingsVM.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +62,7 @@
       <workItem from="1613660879531" duration="392000" />
       <workItem from="1615190756735" duration="469000" />
       <workItem from="1615300479698" duration="452000" />
-      <workItem from="1615818862068" duration="328000" />
+      <workItem from="1615818862068" duration="1357000" />
     </task>
     <task id="LOCAL-00001" summary="Делал структуру файлов.">
       <created>1613399816111</created>
@@ -120,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615818896575</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Добавить gitignore">
+      <created>1615819245986</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615819245986</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
