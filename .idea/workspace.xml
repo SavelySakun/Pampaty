@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="192473d9-f28e-470f-b78d-52cc65b3194c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/SettingsTableItems.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Components/GenericTableView/CellViewModelProtocol.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Components/GenericTableView/CellViewModelProtocol.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/NumberOfTeamsCellVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/NumberOfTeamsCellVM.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/GameSettingsVC.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/GameSettingsVC.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/GameSettingsVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/GameSettingsVM.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Components/Cells/DefaultCell.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Components/Cells/DefaultCell.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615728872748</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Доработать VM ячеек настроек, визуальные исправления">
+      <created>1615734552841</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615734552841</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +142,7 @@
     <MESSAGE value="workspace.xml файл добавил" />
     <MESSAGE value="Сделать наработки для вёрстки дефолтной ячейки" />
     <MESSAGE value="Доработать внешний вид ячейки по умолчанию" />
-    <option name="LAST_COMMIT_MESSAGE" value="Доработать внешний вид ячейки по умолчанию" />
+    <MESSAGE value="Доработать VM ячеек настроек, визуальные исправления" />
+    <option name="LAST_COMMIT_MESSAGE" value="Доработать VM ячеек настроек, визуальные исправления" />
   </component>
 </project>

@@ -46,8 +46,6 @@ extension DefaultCell {
   
   private func setupConstraints() {
     let isAccessoryAvailable = accessory.frame.width > 0
-    let accessoryDescriptionWidth = accessoryDescription.systemLayoutSizeFitting(.zero)
-    let accessoryWidth = accessory.systemLayoutSizeFitting(.zero)
     
     contentView.addSubview(textContent)
     contentView.addSubview(accessory)
@@ -62,7 +60,6 @@ extension DefaultCell {
     accessoryDescription.snp.makeConstraints { (make) in
       make.left.equalTo(textContent.snp.right).offset(12)
       make.centerY.equalTo(textContent.snp.centerY)
-      make.width.equalTo(accessoryDescriptionWidth)
     }
     
     accessory.snp.makeConstraints { (make) in
@@ -71,7 +68,6 @@ extension DefaultCell {
       make.centerY.equalTo(contentView.snp.centerY)
       make.right.equalTo(contentView.snp.right).offset(
         isAccessoryAvailable ? -14 : 0)
-      make.width.equalTo(accessoryWidth)
     }
   }
   
