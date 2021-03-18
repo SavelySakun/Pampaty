@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="192473d9-f28e-470f-b78d-52cc65b3194c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/RoundTimingCellVM.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pampaty.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty.xcodeproj/xcuserdata/savelysakun.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty.xcodeproj/xcuserdata/savelysakun.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/AppDefault/Base.lproj/LaunchScreen.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/AppDefault/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Components/Cells/DefaultCell.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Components/Cells/DefaultCell.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Components/Other/DefaultPicker.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Components/Other/SmallPicker.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/GameSettingsVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/GameSettingsVM.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +24,12 @@
   <component name="GitRewordedCommitMessages">
     <option name="commitMessagesMapping">
       <RewordedCommitMessageMapping>
-        <option name="originalMessage" value="Начал делать функционал для таймера. Установил пакет SnapKit" />
-        <option name="rewordedMessage" value="Установить под. Сделать структуру проекта." />
+        <option name="originalMessage" value="Сделать наработки по внешнему виду UIPickerView" />
+        <option name="rewordedMessage" value="Сделать наработки по внешнему виду UIPickerView" />
       </RewordedCommitMessageMapping>
     </option>
     <option name="currentCommit" value="1" />
-    <option name="onto" value="d05c0718ce24fa2ba264b87b26914cbd93b64a5d" />
+    <option name="onto" value="d63acb0fb95e26d99ff57c3cccb3e2b61adad4f2" />
   </component>
   <component name="ProjectId" id="1oWQHlG0QmeeC7mSjY1Na7bgbw0" />
   <component name="ProjectViewState">
@@ -62,7 +56,9 @@
       <workItem from="1613660879531" duration="392000" />
       <workItem from="1615190756735" duration="469000" />
       <workItem from="1615300479698" duration="452000" />
-      <workItem from="1615818862068" duration="1357000" />
+      <workItem from="1615818862068" duration="2116000" />
+      <workItem from="1615905291230" duration="116000" />
+      <workItem from="1616081745626" duration="251000" />
     </task>
     <task id="LOCAL-00001" summary="Делал структуру файлов.">
       <created>1613399816111</created>
@@ -134,7 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615819245986</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Сделать наработки по внешнему виду UIPickerView">
+      <created>1615825335083</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615825335083</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Сделать наработки по внешнему виду UIPickerView">
+      <created>1615825350377</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1615825350377</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +161,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="add_picker_cell" />
                       </list>
                     </value>
                   </entry>
@@ -174,6 +184,7 @@
     <MESSAGE value="Небольшие фиксы по вёрстке ячеек" />
     <MESSAGE value="Удалить некрректные тесты ячейки с количеством команд" />
     <MESSAGE value="Добавить gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавить gitignore" />
+    <MESSAGE value="Сделать наработки по внешнему виду UIPickerView" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделать наработки по внешнему виду UIPickerView" />
   </component>
 </project>
