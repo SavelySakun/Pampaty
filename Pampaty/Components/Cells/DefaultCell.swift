@@ -33,7 +33,7 @@ extension DefaultCell {
     subtitle.font = UIFont.systemFont(ofSize: 14, weight: .regular)
     subtitle.numberOfLines = 3
     subtitle.textColor = .systemGray
-    accessoryDescription.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+    accessoryDescription.font = UIFont.systemFont(ofSize: 18, weight: .regular)
     accessoryDescription.textAlignment = .right
     accessoryDescription.textColor = .systemGray
     
