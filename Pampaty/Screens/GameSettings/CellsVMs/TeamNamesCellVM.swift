@@ -1,7 +1,11 @@
 import UIKit
 
 class TeamNamesCellVM: CellViewModelProtocol {
-  var title: String = "Названия команд"
+  func onCellSelection() {
+    AppDelegate.sceneDelegate?.navigationController.pushViewController(TeamsVC(), animated: true)
+  }
+  
+  var title: String? = "Названия команд"
   
   var subtitle: String?
   
@@ -10,10 +14,6 @@ class TeamNamesCellVM: CellViewModelProtocol {
   var accessoryDescription: String? = "Изменить"
   
   var selectionStyle: UITableViewCell.SelectionStyle = .none
-  
-  func onCellSelection() {
-    print("SD - 11")
-  }
   
   var delegate: CellProtocol?
   

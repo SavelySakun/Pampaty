@@ -5,7 +5,7 @@ protocol CellProtocol {
 }
 
 protocol CellViewModelProtocol {
-  var title: String { get set }
+  var title: String? { get set }
   var subtitle: String? { get set }
   var accessory: UIView? { get set }
   var accessoryDescription: String? { get set }

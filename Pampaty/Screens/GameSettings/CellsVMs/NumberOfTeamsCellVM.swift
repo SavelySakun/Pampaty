@@ -7,7 +7,7 @@ protocol NumberOfTeamsDelegate: class {
 class NumberOfTeamsCellVM: CellViewModelProtocol {
   var delegate: CellProtocol?
   
-  var title: String = "Количество"
+  var title: String? = "Количество"
   var subtitle: String? = "Оптимально от 2 до 4"
   var accessory: UIView? = UIStepper()
   var accessoryDescription: String?

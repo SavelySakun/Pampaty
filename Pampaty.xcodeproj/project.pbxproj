@@ -10,8 +10,11 @@
 		3FFF307FEE890EC4CECEB717 /* Pods_Pampaty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0A94D567AC47615D671A96 /* Pods_Pampaty.framework */; };
 		FC141A0525E53B4D0009904F /* NumberOfTeamsCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC141A0425E53B4D0009904F /* NumberOfTeamsCellVM.swift */; };
 		FC31C2D925FFA9E80085A59C /* RoundTimingCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31C2D825FFA9E80085A59C /* RoundTimingCellVM.swift */; };
+		FC31CAB52603AD1B0085A59C /* TeamsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31CAB42603AD1B0085A59C /* TeamsVC.swift */; };
+		FC31CAB92603B0CE0085A59C /* TeamsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31CAB82603B0CE0085A59C /* TeamsVM.swift */; };
+		FC31CABD2603B21C0085A59C /* CellItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31CABC2603B21C0085A59C /* CellItemVM.swift */; };
 		FC48DB3925DEBBE00024CB87 /* TableViewItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */; };
-		FC7591C225F61511008A9A54 /* RootNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591C125F61511008A9A54 /* RootNavigationVC.swift */; };
+		FC7591C225F61511008A9A54 /* RootNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591C125F61511008A9A54 /* RootNavigation.swift */; };
 		FC7591C825F616CB008A9A54 /* GameSettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */; };
 		FC7591CD25F6270F008A9A54 /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */; };
 		FC7591D425F63387008A9A54 /* SmallPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591D325F63387008A9A54 /* SmallPicker.swift */; };
@@ -48,8 +51,11 @@
 		D4027EA12223B3FDE596B8EF /* Pods-Pampaty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pampaty.debug.xcconfig"; path = "Target Support Files/Pods-Pampaty/Pods-Pampaty.debug.xcconfig"; sourceTree = "<group>"; };
 		FC141A0425E53B4D0009904F /* NumberOfTeamsCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfTeamsCellVM.swift; sourceTree = "<group>"; };
 		FC31C2D825FFA9E80085A59C /* RoundTimingCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTimingCellVM.swift; sourceTree = "<group>"; };
+		FC31CAB42603AD1B0085A59C /* TeamsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsVC.swift; sourceTree = "<group>"; };
+		FC31CAB82603B0CE0085A59C /* TeamsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsVM.swift; sourceTree = "<group>"; };
+		FC31CABC2603B21C0085A59C /* CellItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellItemVM.swift; sourceTree = "<group>"; };
 		FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewItems.swift; sourceTree = "<group>"; };
-		FC7591C125F61511008A9A54 /* RootNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationVC.swift; sourceTree = "<group>"; };
+		FC7591C125F61511008A9A54 /* RootNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigation.swift; sourceTree = "<group>"; };
 		FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsVM.swift; sourceTree = "<group>"; };
 		FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
 		FC7591D325F63387008A9A54 /* SmallPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPicker.swift; sourceTree = "<group>"; };
@@ -113,6 +119,8 @@
 		FC31CAAF2603ABC60085A59C /* Teams */ = {
 			isa = PBXGroup;
 			children = (
+				FC31CAB42603AD1B0085A59C /* TeamsVC.swift */,
+				FC31CAB82603B0CE0085A59C /* TeamsVM.swift */,
 			);
 			path = Teams;
 			sourceTree = "<group>";
@@ -120,7 +128,7 @@
 		FC7591C025F614F2008A9A54 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				FC7591C125F61511008A9A54 /* RootNavigationVC.swift */,
+				FC7591C125F61511008A9A54 /* RootNavigation.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -238,7 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				FC7591D225F6336C008A9A54 /* Other */,
-				FCE82C3C25DD804B0045D1D2 /* GenericTableView */,
+				FCE82C3C25DD804B0045D1D2 /* DefaultTableView */,
 				FCE826A525DAC4500045D1D2 /* Cells */,
 			);
 			path = Components;
@@ -261,14 +269,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		FCE82C3C25DD804B0045D1D2 /* GenericTableView */ = {
+		FCE82C3C25DD804B0045D1D2 /* DefaultTableView */ = {
 			isa = PBXGroup;
 			children = (
 				FCE82C4125DD88F90045D1D2 /* GenericTableView.swift */,
 				FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */,
 				FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */,
+				FC31CABC2603B21C0085A59C /* CellItemVM.swift */,
 			);
-			path = GenericTableView;
+			path = DefaultTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,15 +420,18 @@
 				FCCB6A0D25FE4EDB006084A7 /* SettingsTableItems.swift in Sources */,
 				FC141A0525E53B4D0009904F /* NumberOfTeamsCellVM.swift in Sources */,
 				FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */,
+				FC31CAB52603AD1B0085A59C /* TeamsVC.swift in Sources */,
+				FC31CAB92603B0CE0085A59C /* TeamsVM.swift in Sources */,
 				FCE826AC25DAC6730045D1D2 /* UIUtils.swift in Sources */,
 				FC31C2D925FFA9E80085A59C /* RoundTimingCellVM.swift in Sources */,
 				FCCB6A3325FE5650006084A7 /* TeamNamesCellVM.swift in Sources */,
-				FC7591C225F61511008A9A54 /* RootNavigationVC.swift in Sources */,
+				FC7591C225F61511008A9A54 /* RootNavigation.swift in Sources */,
 				FCB12B2E25CB0A9E002ADAEF /* SceneDelegate.swift in Sources */,
 				FCE8267D25DAC0EB0045D1D2 /* GameSettingsVC.swift in Sources */,
 				FCCB6A3725FE59C0006084A7 /* ModificationCellVM.swift in Sources */,
 				FC7591C825F616CB008A9A54 /* GameSettingsVM.swift in Sources */,
 				FCE8268225DAC1BE0045D1D2 /* Color Extension.swift in Sources */,
+				FC31CABD2603B21C0085A59C /* CellItemVM.swift in Sources */,
 				FC7591CD25F6270F008A9A54 /* CellViewModelProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
