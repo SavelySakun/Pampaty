@@ -5,7 +5,7 @@ class GameSettingsVM {
     
     TableSection(title: "Команды", items: [
       NumberOfTeamsCellVM(),
-      TeamNamesCellVM()
+      TeamsInGameCellVM()
     ]),
     
     TableSection(title: "Игра", items: [

@@ -1,11 +1,11 @@
 import UIKit
 
-class TeamNamesCellVM: CellViewModelProtocol {
+class TeamsInGameCellVM: CellViewModelProtocol {
   func onCellSelection() {
     AppDelegate.sceneDelegate?.navigationController.pushViewController(TeamsVC(), animated: true)
   }
   
-  var title: String? = "Названия команд"
+  var title: String? = "Команд в игре"
   
   var subtitle: String?
   

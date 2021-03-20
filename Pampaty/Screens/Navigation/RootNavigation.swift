@@ -7,7 +7,6 @@ class RootNavigation: UINavigationController {
     setup()
   }
   
-  private func setup() {
-  }
+  private func setup() {}
   
 }
