@@ -22,4 +22,11 @@ class CellItemVM: CellViewModelProtocol {
     self.title = title
   }
   
+  init(title: String, subtitle: String?, accessory: UIView?, accessoryDescription: String?) {
+    self.title = title
+    self.subtitle = subtitle
+    self.accessory = accessory
+    self.accessoryDescription = accessoryDescription
+  }
+  
 }

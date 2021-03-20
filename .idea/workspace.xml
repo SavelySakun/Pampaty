@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="192473d9-f28e-470f-b78d-52cc65b3194c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Pampaty/Components/GenericTableView/CellItemVM.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pampaty/Screens/Navigation/RootNavigation.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pampaty/Screens/Teams/TeamsVC.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pampaty/Screens/Teams/TeamsVM.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pampaty.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/AppDefault/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/AppDefault/AppDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/AppDefault/SceneDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/AppDefault/SceneDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Components/GenericTableView/CellViewModelProtocol.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Components/GenericTableView/CellViewModelProtocol.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/ModificationCellVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/ModificationCellVM.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/NumberOfTeamsCellVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/NumberOfTeamsCellVM.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/RoundNumbersCellVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/RoundNumbersCellVM.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/RoundTimingCellVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/RoundTimingCellVM.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/TeamNamesCellVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/TeamNamesCellVM.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/GameSettingsVC.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/GameSettingsVC.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/Navigation/RootNavigationVC.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Components/Cells/DefaultCell.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Components/DefaultTableView/Cells/DefaultCell.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Components/DefaultTableView/CellItemVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Components/DefaultTableView/CellItemVM.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/TeamNamesCellVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/TeamsInGameCellVM.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/GameSettingsVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/GameSettingsVM.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/Navigation/RootNavigation.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/Navigation/RootNavigation.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/Teams/TeamsVC.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/Teams/TeamsVC.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/Teams/TeamsVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/Teams/TeamsVM.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -159,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615825350377</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Обновить gitignore">
+      <created>1616239145468</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616239145468</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +200,7 @@
     <MESSAGE value="Удалить некрректные тесты ячейки с количеством команд" />
     <MESSAGE value="Добавить gitignore" />
     <MESSAGE value="Сделать наработки по внешнему виду UIPickerView" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделать наработки по внешнему виду UIPickerView" />
+    <MESSAGE value="Обновить gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновить gitignore" />
   </component>
 </project>
