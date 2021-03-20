@@ -1,7 +1,7 @@
 import UIKit
 
 class RoundNumbersCellVM: CellViewModelProtocol {
-  var title: String = "Раундов"
+  var title: String? = "Раундов"
   
   var subtitle: String?
   

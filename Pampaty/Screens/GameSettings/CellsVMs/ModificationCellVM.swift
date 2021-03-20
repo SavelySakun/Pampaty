@@ -1,7 +1,7 @@
 import UIKit
 
 class ModificationCellVM: CellViewModelProtocol {
-  var title: String = "Модификаторы"
+  var title: String? = "Модификаторы"
   
   var subtitle: String? = "Случайные условия для команд, усложняющие прохождение раунда."
   

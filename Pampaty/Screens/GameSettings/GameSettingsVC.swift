@@ -61,6 +61,7 @@ extension GameSettingsVC: UITableViewDataSource, UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     screenVM.tableSections[indexPath.section].items[indexPath.row].onCellSelection()
+    
   }
   
   private func setupDelegates(for item: inout CellViewModelProtocol) {

@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="192473d9-f28e-470f-b78d-52cc65b3194c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Pampaty/Components/GenericTableView/CellItemVM.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pampaty/Screens/Navigation/RootNavigation.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pampaty/Screens/Teams/TeamsVC.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pampaty/Screens/Teams/TeamsVM.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pampaty.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/AppDefault/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/AppDefault/AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/AppDefault/SceneDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/AppDefault/SceneDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Components/GenericTableView/CellViewModelProtocol.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Components/GenericTableView/CellViewModelProtocol.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/ModificationCellVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/ModificationCellVM.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/NumberOfTeamsCellVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/NumberOfTeamsCellVM.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/RoundNumbersCellVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/RoundNumbersCellVM.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/RoundTimingCellVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/RoundTimingCellVM.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/TeamNamesCellVM.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/CellsVMs/TeamNamesCellVM.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/GameSettingsVC.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Pampaty/Screens/GameSettings/GameSettingsVC.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pampaty/Screens/Navigation/RootNavigationVC.swift" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +73,7 @@
       <workItem from="1615818862068" duration="2116000" />
       <workItem from="1615905291230" duration="116000" />
       <workItem from="1616081745626" duration="251000" />
+      <workItem from="1616234158432" duration="619000" />
     </task>
     <task id="LOCAL-00001" summary="Делал структуру файлов.">
       <created>1613399816111</created>
@@ -161,7 +176,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="add_picker_cell" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>

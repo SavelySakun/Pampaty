@@ -1,7 +1,7 @@
 import UIKit
 
 class RoundTimingCellVM: CellViewModelProtocol {
-  var title: String = "Длительность раунда, секунд"
+  var title: String? = "Длительность раунда, секунд"
   
   var subtitle: String?
   
