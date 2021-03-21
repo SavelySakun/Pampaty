@@ -1,5 +1,3 @@
-// https://stackoverflow.com/questions/37645408/uitableviewcell-rounded-corners-and-shadow
-
 import UIKit
 import SnapKit
 

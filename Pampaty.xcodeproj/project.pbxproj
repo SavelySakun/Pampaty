@@ -32,7 +32,6 @@
 		FCE8268225DAC1BE0045D1D2 /* Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */; };
 		FCE826A725DAC4610045D1D2 /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE826A625DAC4610045D1D2 /* DefaultCell.swift */; };
 		FCE826AC25DAC6730045D1D2 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE826AB25DAC6730045D1D2 /* UIUtils.swift */; };
-		FCE82C4225DD88F90045D1D2 /* GenericTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE82C4125DD88F90045D1D2 /* GenericTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +75,6 @@
 		FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extension.swift"; sourceTree = "<group>"; };
 		FCE826A625DAC4610045D1D2 /* DefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCell.swift; sourceTree = "<group>"; };
 		FCE826AB25DAC6730045D1D2 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
-		FCE82C4125DD88F90045D1D2 /* GenericTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,7 +269,6 @@
 		FCE82C3C25DD804B0045D1D2 /* DefaultTableView */ = {
 			isa = PBXGroup;
 			children = (
-				FCE82C4125DD88F90045D1D2 /* GenericTableView.swift */,
 				FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */,
 				FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */,
 				FC31CABC2603B21C0085A59C /* CellItemVM.swift */,
@@ -415,7 +412,6 @@
 				FC7591D425F63387008A9A54 /* SmallPicker.swift in Sources */,
 				FCCB6A3B25FE5B0C006084A7 /* RoundNumbersCellVM.swift in Sources */,
 				FCE826A725DAC4610045D1D2 /* DefaultCell.swift in Sources */,
-				FCE82C4225DD88F90045D1D2 /* GenericTableView.swift in Sources */,
 				FC48DB3925DEBBE00024CB87 /* TableViewItems.swift in Sources */,
 				FCCB6A0D25FE4EDB006084A7 /* SettingsTableItems.swift in Sources */,
 				FC141A0525E53B4D0009904F /* NumberOfTeamsCellVM.swift in Sources */,
