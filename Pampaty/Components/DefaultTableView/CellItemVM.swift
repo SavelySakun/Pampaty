@@ -6,7 +6,7 @@ class CellItemVM: CellViewModelProtocol {
 	var subtitle: String?
 	var accessory: UIView?
 	var accessoryDescription: String?
-	var leftItemView: UIView?
+	var leftItemView: LeftItemView?
 	var selectionStyle: UITableViewCell.SelectionStyle = .none
 	weak var delegate: CellProtocol?
 
@@ -16,15 +16,11 @@ class CellItemVM: CellViewModelProtocol {
 
 	init() {}
 
-	init(title: String) {
-		self.title = title
-	}
-
 	init(title: String? = nil,
 			 subtitle: String? = nil,
 			 accessory: UIView? = nil,
 			 accessoryDescription: String? = nil,
-			 leftItemView: UIView? = nil,
+			 leftItemView: LeftItemView? = nil,
 			 selectionStyle: UITableViewCell.SelectionStyle = .none) {
 
 		self.title = title
