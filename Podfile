@@ -6,6 +6,6 @@ target 'Pampaty' do
   use_frameworks!
 
   # Pods for Pampaty
-
+pod 'SwiftLint'
 
 end
