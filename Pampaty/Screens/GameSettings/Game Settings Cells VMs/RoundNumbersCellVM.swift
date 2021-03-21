@@ -1,25 +1,18 @@
 import UIKit
 
-class RoundNumbersCellVM: CellViewModelProtocol {
-	var title: String? = "Раундов"
+class RoundNumbersCellVM: CellItemVM {
 
-	var subtitle: String?
+	private var gameTimeTotal: Double = 0
 
-	var accessory: UIView? = UIStepper()
+	override init() {
+		super.init()
 
-	var accessoryDescription: String?
-
-	var selectionStyle: UITableViewCell.SelectionStyle = .none
-
-	func onCellSelection() {
-		print("SD - nothing")
+		title = "Раундов"
+		accessory = UIStepper()
+		setupAccessory()
 	}
 
-	weak var delegate: CellProtocol?
-
-	var gameTimeTotal: Double = 0
-
-	init() {
+	private func setupAccessory() {
 		if let accessory = self.accessory as? UIStepper {
 			accessory.value = 5
 			gameTimeTotal = (accessory.value * 110) / 60
@@ -37,5 +30,4 @@ class RoundNumbersCellVM: CellViewModelProtocol {
 		self.subtitle = "Примерная длительность игры составит \(gameTimeTotal) минут."
 		self.delegate?.onValueChanged()
 	}
-
 }

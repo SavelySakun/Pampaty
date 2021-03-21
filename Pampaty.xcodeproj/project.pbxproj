@@ -115,7 +115,6 @@
 		FC31CAAF2603ABC60085A59C /* Teams */ = {
 			isa = PBXGroup;
 			children = (
-				FC75940525F7C5FA008A9A54 /* CellsVMs */,
 				FC31CAB42603AD1B0085A59C /* TeamsVC.swift */,
 				FC31CAB82603B0CE0085A59C /* TeamsVM.swift */,
 			);
@@ -138,7 +137,7 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		FC75940525F7C5FA008A9A54 /* CellsVMs */ = {
+		FC75940525F7C5FA008A9A54 /* Game Settings Cells VMs */ = {
 			isa = PBXGroup;
 			children = (
 				FC141A0425E53B4D0009904F /* NumberOfTeamsCellVM.swift */,
@@ -147,12 +146,13 @@
 				FCCB6A3A25FE5B0B006084A7 /* RoundNumbersCellVM.swift */,
 				FC31C2D825FFA9E80085A59C /* RoundTimingCellVM.swift */,
 			);
-			path = CellsVMs;
+			path = "Game Settings Cells VMs";
 			sourceTree = "<group>";
 		};
 		FC94D72625D92AED000FF2B6 /* GameSettings */ = {
 			isa = PBXGroup;
 			children = (
+				FC75940525F7C5FA008A9A54 /* Game Settings Cells VMs */,
 				FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */,
 				FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */,
 			);

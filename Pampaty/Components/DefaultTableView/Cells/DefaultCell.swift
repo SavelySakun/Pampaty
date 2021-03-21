@@ -9,6 +9,7 @@ class DefaultCell: UITableViewCell {
 	private var textContent = UIStackView()
 	private var accessory = UIView()
 	private var accessoryDescription = UILabel()
+	private var leftItemView = UIView()
 
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
