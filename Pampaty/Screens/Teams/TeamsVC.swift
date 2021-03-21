@@ -21,7 +21,7 @@ class TeamsVC: UIViewController {
 	}
 
 	private func setupTableView() {
-		tableView.register(DefaultCell.self, forCellReuseIdentifier: DefaultCell().cellReuseIdentifier)
+		tableView.register(Cell.self, forCellReuseIdentifier: Cell.identifier)
 		tableView.dataSource = self
 		tableView.delegate = self
 
@@ -46,7 +46,7 @@ extension TeamsVC: UITableViewDelegate, UITableViewDataSource {
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		if let cell = tableView.dequeueReusableCell(withIdentifier: DefaultCell().cellReuseIdentifier, for: indexPath) as? DefaultCell {
+		if let cell = tableView.dequeueReusableCell(withIdentifier: Cell.identifier, for: indexPath) as? Cell {
 
 			let item = screenVM.items[indexPath.row]
 			cell.setup(withItem: item)

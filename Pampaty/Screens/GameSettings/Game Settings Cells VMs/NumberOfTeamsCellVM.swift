@@ -4,33 +4,30 @@ protocol NumberOfTeamsDelegate: class {
 	func onStepperValueChanged()
 }
 
-class NumberOfTeamsCellVM: CellViewModelProtocol {
-	weak var delegate: CellProtocol?
+class NumberOfTeamsCellVM: CellItemVM {
 
-	var title: String? = "Количество"
-	var subtitle: String? = "Оптимально от 2 до 4"
-	var accessory: UIView? = UIStepper()
-	var accessoryDescription: String?
-	var selectionStyle: UITableViewCell.SelectionStyle = .none
+	override init() {
+		super.init()
 
-	init() {
-		if let accessory = self.accessory as? UIStepper {
+		title = "Количество"
+		subtitle = "Оптимально от 2 до 4"
+		accessory = UIStepper()
+
+		accessorySetup()
+	}
+
+	private func accessorySetup() {
+		if let accessory = accessory as? UIStepper {
 			accessory.value = 2
 			accessoryDescription = String(format: "%.0f", accessory.value)
 			accessory.minimumValue = 1
 			accessory.maximumValue = 9
 			accessory.addTarget(self, action: #selector(onChangeAccessoryValue), for: .touchUpInside)
-
 		}
-	}
-
-	func onCellSelection() {
-		print("SD - cell selection happened")
 	}
 
 	@objc func onChangeAccessoryValue(sender: UIStepper) {
 		self.accessoryDescription = String(format: "%.0f", sender.value)
 		self.delegate?.onValueChanged()
 	}
-
 }

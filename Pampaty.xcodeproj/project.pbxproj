@@ -13,11 +13,13 @@
 		FC31CAB52603AD1B0085A59C /* TeamsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31CAB42603AD1B0085A59C /* TeamsVC.swift */; };
 		FC31CAB92603B0CE0085A59C /* TeamsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31CAB82603B0CE0085A59C /* TeamsVM.swift */; };
 		FC31CABD2603B21C0085A59C /* CellItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31CABC2603B21C0085A59C /* CellItemVM.swift */; };
+		FC46376026074426009CDEE4 /* CellSetupExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC46375F26074426009CDEE4 /* CellSetupExtension.swift */; };
 		FC48DB3925DEBBE00024CB87 /* TableViewItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */; };
 		FC7591C225F61511008A9A54 /* RootNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591C125F61511008A9A54 /* RootNavigation.swift */; };
 		FC7591C825F616CB008A9A54 /* GameSettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */; };
 		FC7591CD25F6270F008A9A54 /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */; };
 		FC7591D425F63387008A9A54 /* SmallPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591D325F63387008A9A54 /* SmallPicker.swift */; };
+		FC8AB10F26074CA500BF5AA4 /* LeftItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8AB10E26074CA500BF5AA4 /* LeftItemView.swift */; };
 		FC94D72025D9104B000FF2B6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC94D71F25D9104B000FF2B6 /* SnapKit */; };
 		FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */; };
 		FCB12B2E25CB0A9E002ADAEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B2D25CB0A9E002ADAEF /* SceneDelegate.swift */; };
@@ -29,7 +31,7 @@
 		FCCB6A3B25FE5B0C006084A7 /* RoundNumbersCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCB6A3A25FE5B0B006084A7 /* RoundNumbersCellVM.swift */; };
 		FCE8267D25DAC0EB0045D1D2 /* GameSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */; };
 		FCE8268225DAC1BE0045D1D2 /* Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */; };
-		FCE826A725DAC4610045D1D2 /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE826A625DAC4610045D1D2 /* DefaultCell.swift */; };
+		FCE826A725DAC4610045D1D2 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE826A625DAC4610045D1D2 /* Cell.swift */; };
 		FCE826AC25DAC6730045D1D2 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE826AB25DAC6730045D1D2 /* UIUtils.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,11 +54,13 @@
 		FC31CAB42603AD1B0085A59C /* TeamsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsVC.swift; sourceTree = "<group>"; };
 		FC31CAB82603B0CE0085A59C /* TeamsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsVM.swift; sourceTree = "<group>"; };
 		FC31CABC2603B21C0085A59C /* CellItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellItemVM.swift; sourceTree = "<group>"; };
+		FC46375F26074426009CDEE4 /* CellSetupExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupExtension.swift; sourceTree = "<group>"; };
 		FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewItems.swift; sourceTree = "<group>"; };
 		FC7591C125F61511008A9A54 /* RootNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigation.swift; sourceTree = "<group>"; };
 		FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsVM.swift; sourceTree = "<group>"; };
 		FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
 		FC7591D325F63387008A9A54 /* SmallPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPicker.swift; sourceTree = "<group>"; };
+		FC8AB10E26074CA500BF5AA4 /* LeftItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftItemView.swift; sourceTree = "<group>"; };
 		FCB12B2825CB0A9E002ADAEF /* Pampaty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pampaty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCB12B2D25CB0A9E002ADAEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +75,7 @@
 		FCCB6A3A25FE5B0B006084A7 /* RoundNumbersCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundNumbersCellVM.swift; sourceTree = "<group>"; };
 		FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsVC.swift; sourceTree = "<group>"; usesTabs = 1; };
 		FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extension.swift"; sourceTree = "<group>"; };
-		FCE826A625DAC4610045D1D2 /* DefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCell.swift; sourceTree = "<group>"; };
+		FCE826A625DAC4610045D1D2 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		FCE826AB25DAC6730045D1D2 /* UIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +119,6 @@
 		FC31CAAF2603ABC60085A59C /* Teams */ = {
 			isa = PBXGroup;
 			children = (
-				FC75940525F7C5FA008A9A54 /* CellsVMs */,
 				FC31CAB42603AD1B0085A59C /* TeamsVC.swift */,
 				FC31CAB82603B0CE0085A59C /* TeamsVM.swift */,
 			);
@@ -134,11 +137,12 @@
 			isa = PBXGroup;
 			children = (
 				FC7591D325F63387008A9A54 /* SmallPicker.swift */,
+				FC8AB10E26074CA500BF5AA4 /* LeftItemView.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
 		};
-		FC75940525F7C5FA008A9A54 /* CellsVMs */ = {
+		FC75940525F7C5FA008A9A54 /* Game Settings Cells VMs */ = {
 			isa = PBXGroup;
 			children = (
 				FC141A0425E53B4D0009904F /* NumberOfTeamsCellVM.swift */,
@@ -147,12 +151,13 @@
 				FCCB6A3A25FE5B0B006084A7 /* RoundNumbersCellVM.swift */,
 				FC31C2D825FFA9E80085A59C /* RoundTimingCellVM.swift */,
 			);
-			path = CellsVMs;
+			path = "Game Settings Cells VMs";
 			sourceTree = "<group>";
 		};
 		FC94D72625D92AED000FF2B6 /* GameSettings */ = {
 			isa = PBXGroup;
 			children = (
+				FC75940525F7C5FA008A9A54 /* Game Settings Cells VMs */,
 				FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */,
 				FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */,
 			);
@@ -258,7 +263,8 @@
 		FCE826A525DAC4500045D1D2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				FCE826A625DAC4610045D1D2 /* DefaultCell.swift */,
+				FCE826A625DAC4610045D1D2 /* Cell.swift */,
+				FC46375F26074426009CDEE4 /* CellSetupExtension.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -427,11 +433,13 @@
 			files = (
 				FC7591D425F63387008A9A54 /* SmallPicker.swift in Sources */,
 				FCCB6A3B25FE5B0C006084A7 /* RoundNumbersCellVM.swift in Sources */,
-				FCE826A725DAC4610045D1D2 /* DefaultCell.swift in Sources */,
+				FCE826A725DAC4610045D1D2 /* Cell.swift in Sources */,
 				FC48DB3925DEBBE00024CB87 /* TableViewItems.swift in Sources */,
+				FC46376026074426009CDEE4 /* CellSetupExtension.swift in Sources */,
 				FC141A0525E53B4D0009904F /* NumberOfTeamsCellVM.swift in Sources */,
 				FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */,
 				FC31CAB52603AD1B0085A59C /* TeamsVC.swift in Sources */,
+				FC8AB10F26074CA500BF5AA4 /* LeftItemView.swift in Sources */,
 				FC31CAB92603B0CE0085A59C /* TeamsVM.swift in Sources */,
 				FCE826AC25DAC6730045D1D2 /* UIUtils.swift in Sources */,
 				FC31C2D925FFA9E80085A59C /* RoundTimingCellVM.swift in Sources */,

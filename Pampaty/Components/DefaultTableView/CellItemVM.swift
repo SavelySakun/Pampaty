@@ -1,22 +1,28 @@
 import UIKit
 
 class CellItemVM: CellViewModelProtocol {
+
+	var title: String?
+	var subtitle: String?
+	var accessory: UIView?
+	var accessoryDescription: String?
+	var leftItemView: LeftItemView?
+	var selectionStyle: UITableViewCell.SelectionStyle = .none
+	weak var delegate: CellProtocol?
+
 	func onCellSelection() {
 		return
 	}
 
-	var title: String?
-	var subtitle: String?
+	init() {}
 
-	var accessory: UIView?
-	var accessoryDescription: String?
-	var selectionStyle: UITableViewCell.SelectionStyle = .none
-	weak var delegate: CellProtocol?
-	init(title: String) {
-		self.title = title
-	}
+	init(title: String? = nil,
+			 subtitle: String? = nil,
+			 accessory: UIView? = nil,
+			 accessoryDescription: String? = nil,
+			 leftItemView: LeftItemView? = nil,
+			 selectionStyle: UITableViewCell.SelectionStyle = .none) {
 
-	init(title: String, subtitle: String?, accessory: UIView?, accessoryDescription: String?) {
 		self.title = title
 		self.subtitle = subtitle
 		self.accessory = accessory
