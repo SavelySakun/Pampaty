@@ -3,6 +3,7 @@ import UIKit
 class GameSettingsVC: UIViewController {
 
 	var tableView = UITableView(frame: .zero, style: .insetGrouped)
+	var playButton = Button(title: "Начать игру", backgroundColor: .systemBlue)
 	let screenVM = GameSettingsVM()
 
 	override func viewDidLoad() {
@@ -13,11 +14,10 @@ class GameSettingsVC: UIViewController {
 
 extension GameSettingsVC {
 	private func setupLayout() {
-
 		title = "Настройки игры"
 		view.backgroundColor = .defaultGray
-
 		setupTable()
+		addPlayButton()
 	}
 
 	private func setupTable() {
@@ -31,50 +31,20 @@ extension GameSettingsVC {
 			make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
 		}
 	}
-}
 
-extension GameSettingsVC: UITableViewDataSource, UITableViewDelegate {
-	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		screenVM.tableSections[section].items.count
-	}
-
-	func numberOfSections(in tableView: UITableView) -> Int {
-		screenVM.tableSections.count
-	}
-
-	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-		var item: CellViewModelProtocol = screenVM.tableSections[indexPath.section].items[indexPath.row]
-		let cellId = Cell.identifier
-		setupDelegates(for: &item)
-
-		if let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? Cell {
-			cell.setup(withItem: item)
-			return cell
+	private func addPlayButton() {
+		view.addSubview(playButton)
+		playButton.snp.makeConstraints { (make) in
+			make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+			make.centerX.equalTo(view.safeAreaLayoutGuide.snp.centerX)
 		}
-		return UITableViewCell()
-	}
-
-	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-		return screenVM.tableSections[section].title
-	}
-
-	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		screenVM.tableSections[indexPath.section].items[indexPath.row].onCellSelection()
-
-	}
-
-	private func setupDelegates(for item: inout CellViewModelProtocol) {
-		item.delegate = self
 	}
 }
 
 extension GameSettingsVC: CellProtocol {
 	func onValueChanged() {
-
 		DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
 			self.tableView.reloadData()
 		}
-
 	}
 }

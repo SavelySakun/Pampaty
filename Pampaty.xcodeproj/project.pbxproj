@@ -29,6 +29,8 @@
 		FCCB6A3325FE5650006084A7 /* TeamsInGameCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCB6A3225FE5650006084A7 /* TeamsInGameCellVM.swift */; };
 		FCCB6A3725FE59C0006084A7 /* ModificationCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCB6A3625FE59C0006084A7 /* ModificationCellVM.swift */; };
 		FCCB6A3B25FE5B0C006084A7 /* RoundNumbersCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCB6A3A25FE5B0B006084A7 /* RoundNumbersCellVM.swift */; };
+		FCD2D00D260F280800DDBC8E /* GameSettingsTableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2D00C260F280800DDBC8E /* GameSettingsTableExtension.swift */; };
+		FCD2D019260F2A0000DDBC8E /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2D018260F2A0000DDBC8E /* Button.swift */; };
 		FCE8267D25DAC0EB0045D1D2 /* GameSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */; };
 		FCE8268225DAC1BE0045D1D2 /* Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */; };
 		FCE826A725DAC4610045D1D2 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE826A625DAC4610045D1D2 /* Cell.swift */; };
@@ -73,6 +75,8 @@
 		FCCB6A3225FE5650006084A7 /* TeamsInGameCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsInGameCellVM.swift; sourceTree = "<group>"; };
 		FCCB6A3625FE59C0006084A7 /* ModificationCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModificationCellVM.swift; sourceTree = "<group>"; usesTabs = 1; };
 		FCCB6A3A25FE5B0B006084A7 /* RoundNumbersCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundNumbersCellVM.swift; sourceTree = "<group>"; };
+		FCD2D00C260F280800DDBC8E /* GameSettingsTableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsTableExtension.swift; sourceTree = "<group>"; };
+		FCD2D018260F2A0000DDBC8E /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsVC.swift; sourceTree = "<group>"; usesTabs = 1; };
 		FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extension.swift"; sourceTree = "<group>"; };
 		FCE826A625DAC4610045D1D2 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
@@ -133,15 +137,6 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		FC7591D225F6336C008A9A54 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				FC7591D325F63387008A9A54 /* SmallPicker.swift */,
-				FC8AB10E26074CA500BF5AA4 /* LeftItemView.swift */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
 		FC75940525F7C5FA008A9A54 /* Game Settings Cells VMs */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +154,7 @@
 			children = (
 				FC75940525F7C5FA008A9A54 /* Game Settings Cells VMs */,
 				FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */,
+				FCD2D00C260F280800DDBC8E /* GameSettingsTableExtension.swift */,
 				FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */,
 			);
 			path = GameSettings;
@@ -245,8 +241,10 @@
 		FCE8267A25DAC09C0045D1D2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				FC7591D225F6336C008A9A54 /* Other */,
 				FCE82C3C25DD804B0045D1D2 /* DefaultTableView */,
+				FC7591D325F63387008A9A54 /* SmallPicker.swift */,
+				FC8AB10E26074CA500BF5AA4 /* LeftItemView.swift */,
+				FCD2D018260F2A0000DDBC8E /* Button.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -431,6 +429,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD2D00D260F280800DDBC8E /* GameSettingsTableExtension.swift in Sources */,
+				FCD2D019260F2A0000DDBC8E /* Button.swift in Sources */,
 				FC7591D425F63387008A9A54 /* SmallPicker.swift in Sources */,
 				FCCB6A3B25FE5B0C006084A7 /* RoundNumbersCellVM.swift in Sources */,
 				FCE826A725DAC4610045D1D2 /* Cell.swift in Sources */,
