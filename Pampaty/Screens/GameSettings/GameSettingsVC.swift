@@ -14,7 +14,7 @@ class GameSettingsVC: UIViewController {
 
 extension GameSettingsVC {
 	private func setupLayout() {
-		title = "Настройки игры"
+		title = "Настройки"
 		view.backgroundColor = .defaultGray
 		setupTable()
 		addPlayButton()
@@ -38,6 +38,11 @@ extension GameSettingsVC {
 			make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
 			make.centerX.equalTo(view.safeAreaLayoutGuide.snp.centerX)
 		}
+		playButton.addTarget(self, action: #selector(pushBeReadyScreen), for: .touchUpInside)
+	}
+
+	@objc private func pushBeReadyScreen() {
+		AppDelegate.sceneDelegate?.navigationController.pushViewController(BeReadyVC(), animated: true)
 	}
 }
 

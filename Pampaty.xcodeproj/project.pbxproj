@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3FFF307FEE890EC4CECEB717 /* Pods_Pampaty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0A94D567AC47615D671A96 /* Pods_Pampaty.framework */; };
+		FC00848526161E3300448849 /* BeReadyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC00848426161E3300448849 /* BeReadyVM.swift */; };
+		FC00848A26161EDC00448849 /* GameCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC00848926161EDC00448849 /* GameCellVM.swift */; };
+		FC00848F26161FDD00448849 /* BallsCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC00848D26161FDD00448849 /* BallsCellVM.swift */; };
+		FC00849026161FDD00448849 /* CurrentModificationCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC00848E26161FDD00448849 /* CurrentModificationCellVM.swift */; };
 		FC141A0525E53B4D0009904F /* NumberOfTeamsCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC141A0425E53B4D0009904F /* NumberOfTeamsCellVM.swift */; };
 		FC31C2D925FFA9E80085A59C /* RoundTimingCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31C2D825FFA9E80085A59C /* RoundTimingCellVM.swift */; };
 		FC31CAB52603AD1B0085A59C /* TeamsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31CAB42603AD1B0085A59C /* TeamsVC.swift */; };
@@ -19,6 +23,9 @@
 		FC7591C825F616CB008A9A54 /* GameSettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */; };
 		FC7591CD25F6270F008A9A54 /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */; };
 		FC7591D425F63387008A9A54 /* SmallPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591D325F63387008A9A54 /* SmallPicker.swift */; };
+		FC8164652618849800A363D4 /* ViewControllerWithTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8164642618849800A363D4 /* ViewControllerWithTable.swift */; };
+		FC81646A261885EF00A363D4 /* VCWithTableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC816469261885EF00A363D4 /* VCWithTableExtensions.swift */; };
+		FC81647826188C4900A363D4 /* VCWithTableVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC81647726188C4900A363D4 /* VCWithTableVM.swift */; };
 		FC8AB10F26074CA500BF5AA4 /* LeftItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8AB10E26074CA500BF5AA4 /* LeftItemView.swift */; };
 		FC94D72025D9104B000FF2B6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC94D71F25D9104B000FF2B6 /* SnapKit */; };
 		FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */; };
@@ -31,6 +38,8 @@
 		FCCB6A3B25FE5B0C006084A7 /* RoundNumbersCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCB6A3A25FE5B0B006084A7 /* RoundNumbersCellVM.swift */; };
 		FCD2D00D260F280800DDBC8E /* GameSettingsTableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2D00C260F280800DDBC8E /* GameSettingsTableExtension.swift */; };
 		FCD2D019260F2A0000DDBC8E /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2D018260F2A0000DDBC8E /* Button.swift */; };
+		FCD2D0222610775200DDBC8E /* BeReadyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2D0212610775200DDBC8E /* BeReadyVC.swift */; };
+		FCD2D02A261077C600DDBC8E /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2D029261077C600DDBC8E /* TableHeaderView.swift */; };
 		FCE8267D25DAC0EB0045D1D2 /* GameSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */; };
 		FCE8268225DAC1BE0045D1D2 /* Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */; };
 		FCE826A725DAC4610045D1D2 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE826A625DAC4610045D1D2 /* Cell.swift */; };
@@ -51,6 +60,10 @@
 		36C61CAC84B8BA361A4D0C57 /* Pods-Pampaty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pampaty.release.xcconfig"; path = "Target Support Files/Pods-Pampaty/Pods-Pampaty.release.xcconfig"; sourceTree = "<group>"; };
 		7B0A94D567AC47615D671A96 /* Pods_Pampaty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pampaty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4027EA12223B3FDE596B8EF /* Pods-Pampaty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pampaty.debug.xcconfig"; path = "Target Support Files/Pods-Pampaty/Pods-Pampaty.debug.xcconfig"; sourceTree = "<group>"; };
+		FC00848426161E3300448849 /* BeReadyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeReadyVM.swift; sourceTree = "<group>"; };
+		FC00848926161EDC00448849 /* GameCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCellVM.swift; sourceTree = "<group>"; };
+		FC00848D26161FDD00448849 /* BallsCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallsCellVM.swift; sourceTree = "<group>"; };
+		FC00848E26161FDD00448849 /* CurrentModificationCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentModificationCellVM.swift; sourceTree = "<group>"; };
 		FC141A0425E53B4D0009904F /* NumberOfTeamsCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfTeamsCellVM.swift; sourceTree = "<group>"; };
 		FC31C2D825FFA9E80085A59C /* RoundTimingCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTimingCellVM.swift; sourceTree = "<group>"; };
 		FC31CAB42603AD1B0085A59C /* TeamsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsVC.swift; sourceTree = "<group>"; };
@@ -62,6 +75,9 @@
 		FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsVM.swift; sourceTree = "<group>"; };
 		FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
 		FC7591D325F63387008A9A54 /* SmallPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPicker.swift; sourceTree = "<group>"; };
+		FC8164642618849800A363D4 /* ViewControllerWithTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWithTable.swift; sourceTree = "<group>"; };
+		FC816469261885EF00A363D4 /* VCWithTableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCWithTableExtensions.swift; sourceTree = "<group>"; };
+		FC81647726188C4900A363D4 /* VCWithTableVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCWithTableVM.swift; sourceTree = "<group>"; };
 		FC8AB10E26074CA500BF5AA4 /* LeftItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftItemView.swift; sourceTree = "<group>"; };
 		FCB12B2825CB0A9E002ADAEF /* Pampaty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pampaty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +93,8 @@
 		FCCB6A3A25FE5B0B006084A7 /* RoundNumbersCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundNumbersCellVM.swift; sourceTree = "<group>"; };
 		FCD2D00C260F280800DDBC8E /* GameSettingsTableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsTableExtension.swift; sourceTree = "<group>"; };
 		FCD2D018260F2A0000DDBC8E /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		FCD2D0212610775200DDBC8E /* BeReadyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeReadyVC.swift; sourceTree = "<group>"; };
+		FCD2D029261077C600DDBC8E /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
 		FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsVC.swift; sourceTree = "<group>"; usesTabs = 1; };
 		FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extension.swift"; sourceTree = "<group>"; };
 		FCE826A625DAC4610045D1D2 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
@@ -120,6 +138,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC00848826161EA100448849 /* CellItems */ = {
+			isa = PBXGroup;
+			children = (
+				FC00848D26161FDD00448849 /* BallsCellVM.swift */,
+				FC00848E26161FDD00448849 /* CurrentModificationCellVM.swift */,
+				FC00848926161EDC00448849 /* GameCellVM.swift */,
+			);
+			path = CellItems;
+			sourceTree = "<group>";
+		};
 		FC31CAAF2603ABC60085A59C /* Teams */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +175,16 @@
 				FC31C2D825FFA9E80085A59C /* RoundTimingCellVM.swift */,
 			);
 			path = "Game Settings Cells VMs";
+			sourceTree = "<group>";
+		};
+		FC816468261885CE00A363D4 /* ViewControllerWithTable */ = {
+			isa = PBXGroup;
+			children = (
+				FC8164642618849800A363D4 /* ViewControllerWithTable.swift */,
+				FC816469261885EF00A363D4 /* VCWithTableExtensions.swift */,
+				FC81647726188C4900A363D4 /* VCWithTableVM.swift */,
+			);
+			path = ViewControllerWithTable;
 			sourceTree = "<group>";
 		};
 		FC94D72625D92AED000FF2B6 /* GameSettings */ = {
@@ -196,8 +234,9 @@
 			isa = PBXGroup;
 			children = (
 				FC7591C025F614F2008A9A54 /* Navigation */,
-				FC31CAAF2603ABC60085A59C /* Teams */,
 				FC94D72625D92AED000FF2B6 /* GameSettings */,
+				FC31CAAF2603ABC60085A59C /* Teams */,
+				FCD2D0202610772F00DDBC8E /* BeReady */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -238,10 +277,21 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		FCD2D0202610772F00DDBC8E /* BeReady */ = {
+			isa = PBXGroup;
+			children = (
+				FC00848826161EA100448849 /* CellItems */,
+				FCD2D0212610775200DDBC8E /* BeReadyVC.swift */,
+				FC00848426161E3300448849 /* BeReadyVM.swift */,
+			);
+			path = BeReady;
+			sourceTree = "<group>";
+		};
 		FCE8267A25DAC09C0045D1D2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				FCE82C3C25DD804B0045D1D2 /* DefaultTableView */,
+				FC816468261885CE00A363D4 /* ViewControllerWithTable */,
+				FCE82C3C25DD804B0045D1D2 /* TableView */,
 				FC7591D325F63387008A9A54 /* SmallPicker.swift */,
 				FC8AB10E26074CA500BF5AA4 /* LeftItemView.swift */,
 				FCD2D018260F2A0000DDBC8E /* Button.swift */,
@@ -267,15 +317,16 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		FCE82C3C25DD804B0045D1D2 /* DefaultTableView */ = {
+		FCE82C3C25DD804B0045D1D2 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
 				FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */,
 				FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */,
 				FC31CABC2603B21C0085A59C /* CellItemVM.swift */,
+				FCD2D029261077C600DDBC8E /* TableHeaderView.swift */,
 				FCE826A525DAC4500045D1D2 /* Cells */,
 			);
-			path = DefaultTableView;
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,17 +481,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCD2D00D260F280800DDBC8E /* GameSettingsTableExtension.swift in Sources */,
+				FC81646A261885EF00A363D4 /* VCWithTableExtensions.swift in Sources */,
 				FCD2D019260F2A0000DDBC8E /* Button.swift in Sources */,
 				FC7591D425F63387008A9A54 /* SmallPicker.swift in Sources */,
 				FCCB6A3B25FE5B0C006084A7 /* RoundNumbersCellVM.swift in Sources */,
+				FC81647826188C4900A363D4 /* VCWithTableVM.swift in Sources */,
 				FCE826A725DAC4610045D1D2 /* Cell.swift in Sources */,
 				FC48DB3925DEBBE00024CB87 /* TableViewItems.swift in Sources */,
 				FC46376026074426009CDEE4 /* CellSetupExtension.swift in Sources */,
 				FC141A0525E53B4D0009904F /* NumberOfTeamsCellVM.swift in Sources */,
 				FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */,
+				FC00848A26161EDC00448849 /* GameCellVM.swift in Sources */,
 				FC31CAB52603AD1B0085A59C /* TeamsVC.swift in Sources */,
+				FCD2D02A261077C600DDBC8E /* TableHeaderView.swift in Sources */,
 				FC8AB10F26074CA500BF5AA4 /* LeftItemView.swift in Sources */,
+				FC00849026161FDD00448849 /* CurrentModificationCellVM.swift in Sources */,
 				FC31CAB92603B0CE0085A59C /* TeamsVM.swift in Sources */,
+				FC00848526161E3300448849 /* BeReadyVM.swift in Sources */,
+				FCD2D0222610775200DDBC8E /* BeReadyVC.swift in Sources */,
+				FC8164652618849800A363D4 /* ViewControllerWithTable.swift in Sources */,
 				FCE826AC25DAC6730045D1D2 /* UIUtils.swift in Sources */,
 				FC31C2D925FFA9E80085A59C /* RoundTimingCellVM.swift in Sources */,
 				FCCB6A3325FE5650006084A7 /* TeamsInGameCellVM.swift in Sources */,
@@ -450,6 +509,7 @@
 				FCCB6A3725FE59C0006084A7 /* ModificationCellVM.swift in Sources */,
 				FC7591C825F616CB008A9A54 /* GameSettingsVM.swift in Sources */,
 				FCE8268225DAC1BE0045D1D2 /* Color Extension.swift in Sources */,
+				FC00848F26161FDD00448849 /* BallsCellVM.swift in Sources */,
 				FC31CABD2603B21C0085A59C /* CellItemVM.swift in Sources */,
 				FC7591CD25F6270F008A9A54 /* CellViewModelProtocol.swift in Sources */,
 			);

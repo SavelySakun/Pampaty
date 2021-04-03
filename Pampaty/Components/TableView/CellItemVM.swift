@@ -14,6 +14,10 @@ class CellItemVM: CellViewModelProtocol {
 		return
 	}
 
+	func setProperties() {
+		return
+	}
+
 	init() {}
 
 	init(title: String? = nil,
@@ -27,5 +31,7 @@ class CellItemVM: CellViewModelProtocol {
 		self.subtitle = subtitle
 		self.accessory = accessory
 		self.accessoryDescription = accessoryDescription
+
+		setProperties()
 	}
 }
