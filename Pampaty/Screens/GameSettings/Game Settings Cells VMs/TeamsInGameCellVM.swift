@@ -6,7 +6,7 @@ class TeamsInGameCellVM: CellItemVM {
 		super.init()
 		
 		title = "Команд в игре"
-		accessory = UIImageView(image: UIImage(systemName: "chevron.right")?.withRenderingMode(.alwaysTemplate))
+		accessory = UIUtils.chevron
 		accessoryDescription = "Изменить"
 	}
 
