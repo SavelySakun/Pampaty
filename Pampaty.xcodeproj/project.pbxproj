@@ -187,6 +187,13 @@
 			path = ViewControllerWithTable;
 			sourceTree = "<group>";
 		};
+		FC8164A2261B612900A363D4 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 		FC94D72625D92AED000FF2B6 /* GameSettings */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +243,7 @@
 				FC7591C025F614F2008A9A54 /* Navigation */,
 				FC94D72625D92AED000FF2B6 /* GameSettings */,
 				FC31CAAF2603ABC60085A59C /* Teams */,
+				FC8164A2261B612900A363D4 /* Game */,
 				FCD2D0202610772F00DDBC8E /* BeReady */,
 			);
 			path = Screens;
