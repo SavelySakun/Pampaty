@@ -4,7 +4,7 @@ class ViewControllerWithTable: UIViewController {
 
 	var tableHeaderView: TableHeaderView?
 	var tableView = UITableView(frame: .zero, style: .insetGrouped)
-	var screenVM = BeReadyVM()
+	var screenVM: VCWithTableVM!
 	var button: Button?
 
 	// Use for configure VC props

@@ -26,6 +26,8 @@
 		FC8164652618849800A363D4 /* ViewControllerWithTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8164642618849800A363D4 /* ViewControllerWithTable.swift */; };
 		FC81646A261885EF00A363D4 /* VCWithTableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC816469261885EF00A363D4 /* VCWithTableExtensions.swift */; };
 		FC81647826188C4900A363D4 /* VCWithTableVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC81647726188C4900A363D4 /* VCWithTableVM.swift */; };
+		FC8164A6261B647800A363D4 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8164A5261B647800A363D4 /* GameVC.swift */; };
+		FC8164AA261B648100A363D4 /* GameVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8164A9261B648100A363D4 /* GameVM.swift */; };
 		FC8AB10F26074CA500BF5AA4 /* LeftItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8AB10E26074CA500BF5AA4 /* LeftItemView.swift */; };
 		FC94D72025D9104B000FF2B6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC94D71F25D9104B000FF2B6 /* SnapKit */; };
 		FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */; };
@@ -78,6 +80,8 @@
 		FC8164642618849800A363D4 /* ViewControllerWithTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWithTable.swift; sourceTree = "<group>"; };
 		FC816469261885EF00A363D4 /* VCWithTableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCWithTableExtensions.swift; sourceTree = "<group>"; };
 		FC81647726188C4900A363D4 /* VCWithTableVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCWithTableVM.swift; sourceTree = "<group>"; };
+		FC8164A5261B647800A363D4 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		FC8164A9261B648100A363D4 /* GameVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVM.swift; sourceTree = "<group>"; };
 		FC8AB10E26074CA500BF5AA4 /* LeftItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftItemView.swift; sourceTree = "<group>"; };
 		FCB12B2825CB0A9E002ADAEF /* Pampaty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pampaty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 		FC8164A2261B612900A363D4 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				FC8164A5261B647800A363D4 /* GameVC.swift */,
+				FC8164A9261B648100A363D4 /* GameVM.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -510,6 +516,8 @@
 				FC8164652618849800A363D4 /* ViewControllerWithTable.swift in Sources */,
 				FCE826AC25DAC6730045D1D2 /* UIUtils.swift in Sources */,
 				FC31C2D925FFA9E80085A59C /* RoundTimingCellVM.swift in Sources */,
+				FC8164AA261B648100A363D4 /* GameVM.swift in Sources */,
+				FC8164A6261B647800A363D4 /* GameVC.swift in Sources */,
 				FCCB6A3325FE5650006084A7 /* TeamsInGameCellVM.swift in Sources */,
 				FC7591C225F61511008A9A54 /* RootNavigation.swift in Sources */,
 				FCB12B2E25CB0A9E002ADAEF /* SceneDelegate.swift in Sources */,

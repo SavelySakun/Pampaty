@@ -7,6 +7,6 @@ class BeReadyVC: ViewControllerWithTable {
 	}
 
 	@objc override func onButtonTouch() {
-		AppDelegate.sceneDelegate?.navigationController.pushViewController(GameSettingsVC(), animated: true)
+		AppDelegate.sceneDelegate?.navigationController.pushViewController(GameVC(), animated: true)
 	}
 }
