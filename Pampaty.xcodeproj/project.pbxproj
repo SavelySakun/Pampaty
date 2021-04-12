@@ -28,6 +28,8 @@
 		FC81647826188C4900A363D4 /* VCWithTableVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC81647726188C4900A363D4 /* VCWithTableVM.swift */; };
 		FC8164A6261B647800A363D4 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8164A5261B647800A363D4 /* GameVC.swift */; };
 		FC8164AA261B648100A363D4 /* GameVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8164A9261B648100A363D4 /* GameVM.swift */; };
+		FC8164B5261B6A7E00A363D4 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8164B4261B6A7E00A363D4 /* CollectionView.swift */; };
+		FC8164B9261B6AC000A363D4 /* SmallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8164B8261B6AC000A363D4 /* SmallCollectionViewCell.swift */; };
 		FC8AB10F26074CA500BF5AA4 /* LeftItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8AB10E26074CA500BF5AA4 /* LeftItemView.swift */; };
 		FC94D72025D9104B000FF2B6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC94D71F25D9104B000FF2B6 /* SnapKit */; };
 		FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */; };
@@ -82,6 +84,8 @@
 		FC81647726188C4900A363D4 /* VCWithTableVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCWithTableVM.swift; sourceTree = "<group>"; };
 		FC8164A5261B647800A363D4 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		FC8164A9261B648100A363D4 /* GameVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVM.swift; sourceTree = "<group>"; };
+		FC8164B4261B6A7E00A363D4 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		FC8164B8261B6AC000A363D4 /* SmallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC8AB10E26074CA500BF5AA4 /* LeftItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftItemView.swift; sourceTree = "<group>"; };
 		FCB12B2825CB0A9E002ADAEF /* Pampaty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pampaty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB12B2B25CB0A9E002ADAEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +204,15 @@
 			path = Game;
 			sourceTree = "<group>";
 		};
+		FC8164AD261B69A200A363D4 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				FC8164B4261B6A7E00A363D4 /* CollectionView.swift */,
+				FC8164B8261B6AC000A363D4 /* SmallCollectionViewCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		FC94D72625D92AED000FF2B6 /* GameSettings */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				FC816468261885CE00A363D4 /* ViewControllerWithTable */,
+				FC8164AD261B69A200A363D4 /* CollectionView */,
 				FCE82C3C25DD804B0045D1D2 /* TableView */,
 				FC7591D325F63387008A9A54 /* SmallPicker.swift */,
 				FC8AB10E26074CA500BF5AA4 /* LeftItemView.swift */,
@@ -502,6 +516,7 @@
 				FC81647826188C4900A363D4 /* VCWithTableVM.swift in Sources */,
 				FCE826A725DAC4610045D1D2 /* Cell.swift in Sources */,
 				FC48DB3925DEBBE00024CB87 /* TableViewItems.swift in Sources */,
+				FC8164B9261B6AC000A363D4 /* SmallCollectionViewCell.swift in Sources */,
 				FC46376026074426009CDEE4 /* CellSetupExtension.swift in Sources */,
 				FC141A0525E53B4D0009904F /* NumberOfTeamsCellVM.swift in Sources */,
 				FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */,
@@ -510,6 +525,7 @@
 				FCD2D02A261077C600DDBC8E /* TableHeaderView.swift in Sources */,
 				FC8AB10F26074CA500BF5AA4 /* LeftItemView.swift in Sources */,
 				FC00849026161FDD00448849 /* CurrentModificationCellVM.swift in Sources */,
+				FC8164B5261B6A7E00A363D4 /* CollectionView.swift in Sources */,
 				FC31CAB92603B0CE0085A59C /* TeamsVM.swift in Sources */,
 				FC00848526161E3300448849 /* BeReadyVM.swift in Sources */,
 				FCD2D0222610775200DDBC8E /* BeReadyVC.swift in Sources */,
