@@ -10,6 +10,7 @@ class Cell: UITableViewCell {
 	var accessory = UIView()
 	var accessoryDescription = UILabel()
 	var leftItemView = LeftItemView()
+	var isLayoutSetupFinished: Bool = false
 
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -29,7 +30,7 @@ extension Cell {
 		accessoryDescription.text = item.accessoryDescription
 		selectionStyle = item.selectionStyle
 		leftItemView = item.leftItemView ?? LeftItemView()
-
+		guard !isLayoutSetupFinished else { return }
 		setupCellLayout()
 	}
 }
