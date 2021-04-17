@@ -4,6 +4,16 @@ class CollectionView: UICollectionView {
 
 	var data: [Any] = []
 
+	override var contentSize: CGSize {
+		didSet {
+			self.invalidateIntrinsicContentSize()
+		}
+	}
+	override var intrinsicContentSize: CGSize {
+		self.layoutIfNeeded()
+		return CGSize(width: UIView.noIntrinsicMetric, height: contentSize.height)
+	}
+
 	override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
 		let collectionViewLayout = UICollectionViewFlowLayout()
 		collectionViewLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
@@ -20,7 +30,8 @@ class CollectionView: UICollectionView {
 	}
 
 	func setLayout() {
-		backgroundColor = .defaultGray
+		isScrollEnabled = false
+		backgroundColor = .clear
 		dataSource = self
 		delegate = self
 		register(SmallCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
