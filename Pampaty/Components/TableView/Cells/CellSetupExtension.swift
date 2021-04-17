@@ -13,6 +13,7 @@ extension Cell {
 		setupTextContent()
 		setupAccessoryDescription()
 		setupAccessory()
+		isLayoutSetupFinished = true
 	}
 
 	private func addSubviews() {

@@ -43,7 +43,7 @@ extension ViewControllerWithTable: CellProtocol {
 	}
 
 	func onValueChanged() {
-		DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
+		DispatchQueue.main.async {
 			self.tableView.reloadData()
 		}
 	}
