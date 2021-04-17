@@ -2,9 +2,9 @@ import UIKit
 
 class Button: UIButton {
 
-	init(title: String, backgroundColor: UIColor) {
+	init(title: String, backgroundColor: UIColor? = nil) {
 		super.init(frame: .zero)
-		setButton(title: title, backgroundColor: backgroundColor)
+		setButton(title: title, backgroundColor: backgroundColor ?? .systemBlue)
 	}
 
 	required init?(coder: NSCoder) {

@@ -1,12 +1,6 @@
 import UIKit
 
 class BeReadyVM: VCWithTableVM {
-
-	override init(tableHeader: TableHeader? = nil, tableSections: [TableSection]? = nil) {
-		super.init()
-		setProperties()
-	}
-
 	override func setProperties() {
 		tableHeader = TableHeader(title: "Пупсики", subtitle: "Ход команды")
 

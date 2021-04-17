@@ -2,7 +2,7 @@ import UIKit
 
 class TableHeaderView: UIView {
 
-	let titleLabel = UIUtils.getCustomLabel(size: 34, weight: .bold)
+	let titleLabel = UIUtils.getCustomLabel(size: 24, weight: .bold)
 	let subtitleLabel = UIUtils.getCustomLabel(size: 18, weight: .medium, color: .lightGray)
 
 	init(title: String, subtitle: String?, frame: CGRect) {
@@ -22,8 +22,8 @@ class TableHeaderView: UIView {
 
 		addSubview(stack)
 		stack.snp.makeConstraints { (make) in
-			make.top.equalTo(snp.top).offset(26)
-			make.left.equalTo(snp.left).offset(30)
+			make.top.equalTo(snp.top).offset(20)
+			make.left.equalTo(snp.left).offset(20)
 			make.bottom.equalTo(snp.bottom).offset(14)
 		}
 	}
