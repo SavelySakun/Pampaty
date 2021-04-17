@@ -6,7 +6,7 @@ class TeamsInGameCellVM: CellItemVM {
 		super.init()
 		
 		title = "Команд в игре"
-		accessory = UIHelpers.chevron
+		accessory = UIHelpers.getAcessory(.chevron)
 		accessoryDescription = "Изменить"
 	}
 

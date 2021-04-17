@@ -34,9 +34,10 @@ extension Cell {
 
 		textContent = UIStackView(arrangedSubviews: [title, subtitle])
 		textContent.axis = .vertical
-		textContent.spacing = 8
 		textContent.distribution = .equalSpacing
 		textContent.isUserInteractionEnabled = true
+		guard let textCheckInSubtitle = subtitle.text?.isEmpty, !textCheckInSubtitle else { return }
+		textContent.spacing = 8
 	}
 
 	private func setupLeftItemView() {
@@ -69,12 +70,16 @@ extension Cell {
 	private func setupAccessory() {
 		let isAccessoryPicker = accessory is SmallPicker
 		let isAccessoryAvailable = accessory.frame.width > 0
+
 		accessory.snp.makeConstraints { (make) in
+
 			make.left.equalTo(accessoryDescription.snp.right).offset(
 				isAccessoryAvailable ? UIHelpers.padding : 0)
+
 			if !isAccessoryPicker {
 				make.width.equalTo(accessory.sizeThatFits(CGSize(width: accessory.frame.width, height: accessory.frame.height)))
 			}
+
 			make.centerY.equalTo(contentView.snp.centerY)
 			make.right.equalTo(contentView.snp.right).offset(
 				isAccessoryAvailable ? -14 : 0)
