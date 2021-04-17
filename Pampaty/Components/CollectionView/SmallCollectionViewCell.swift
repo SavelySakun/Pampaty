@@ -40,8 +40,4 @@ class SmallCollectionViewCell: UICollectionViewCell {
 			make.right.equalTo(contentView.snp.right).offset(-23)
 		}
 	}
-
-//	override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
-//		<#code#>
-//	}
 }
