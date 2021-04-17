@@ -2,8 +2,8 @@ import UIKit
 
 class TableHeaderView: UIView {
 
-	let titleLabel = UIUtils.getCustomLabel(size: 24, weight: .bold)
-	let subtitleLabel = UIUtils.getCustomLabel(size: 18, weight: .medium, color: .lightGray)
+	let titleLabel = UIHelpers.getCustomLabel(size: 24, weight: .bold)
+	let subtitleLabel = UIHelpers.getCustomLabel(size: 18, weight: .medium, color: .lightGray)
 
 	init(title: String, subtitle: String?, frame: CGRect) {
 		super.init(frame: frame)
