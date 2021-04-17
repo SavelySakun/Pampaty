@@ -2,7 +2,9 @@ import UIKit
 import SnapKit
 
 class SmallCollectionViewCell: UICollectionViewCell {
-	let timeLabel = UIUtils.getTitleLabel()
+	let containerView = UIView()
+	let titleLabel = UIHelpers.getCustomLabel(size: 14, color: .systemGray)
+	let contentLabel = UIHelpers.getTitleLabel()
 	let iconImageView = UIImageView(image: UIImage(systemName: "square.and.arrow.down.fill"))
 
 	override init(frame: CGRect) {
@@ -15,29 +17,50 @@ class SmallCollectionViewCell: UICollectionViewCell {
 	}
 
 	private func setLayout() {
-		contentView.backgroundColor = .white
-		contentView.layer.cornerRadius = 14
-		timeLabel.text = "57"
-		timeLabel.font = UIFont.systemFont(ofSize: 34)
-		setLabel()
+		contentView.backgroundColor = .clear
+		setTitleLabel()
+		setContainer()
+		setContentLabel()
 		setIcon()
 	}
 
-	private func setLabel() {
-		contentView.addSubview(timeLabel)
-		timeLabel.snp.makeConstraints { (make) in
-			make.top.equalTo(contentView.snp.top).offset(8)
-			make.left.equalTo(contentView.snp.left).offset(23)
-			make.bottom.equalTo(contentView.snp.bottom).offset(-8)
+	private func setTitleLabel() {
+		contentView.addSubview(titleLabel)
+		titleLabel.text = "ОСТАЛОСЬ"
+		titleLabel.snp.makeConstraints { (make) in
+			make.top.equalTo(contentView.snp.top)
+			make.left.equalTo(contentView.snp.left).offset(19)
+			make.right.equalTo(contentView.snp.right)
+		}
+	}
+
+	private func setContainer() {
+		containerView.backgroundColor = .white
+		containerView.layer.cornerRadius = 14
+		contentView.addSubview(containerView)
+		containerView.snp.makeConstraints { (make) in
+			make.top.equalTo(titleLabel.snp.bottom).offset(10)
+			make.left.bottom.right.equalToSuperview()
+		}
+	}
+
+	private func setContentLabel() {
+		contentLabel.text = "57"
+		contentLabel.font = UIFont.systemFont(ofSize: 34)
+		containerView.addSubview(contentLabel)
+		contentLabel.snp.makeConstraints { (make) in
+			make.top.equalTo(containerView.snp.top).offset(10)
+			make.left.equalTo(containerView.snp.left).offset(23)
+			make.bottom.equalTo(containerView.snp.bottom).offset(-10)
 		}
 	}
 
 	private func setIcon() {
-		contentView.addSubview(iconImageView)
+		containerView.addSubview(iconImageView)
 		iconImageView.snp.makeConstraints { (make) in
-			make.left.equalTo(timeLabel.snp.right).offset(15)
-			make.centerY.equalTo(timeLabel.snp.centerY)
-			make.right.equalTo(contentView.snp.right).offset(-23)
+			make.left.equalTo(contentLabel.snp.right).offset(15)
+			make.centerY.equalTo(contentLabel.snp.centerY)
+			make.right.equalTo(containerView.snp.right).offset(-23)
 		}
 	}
 }

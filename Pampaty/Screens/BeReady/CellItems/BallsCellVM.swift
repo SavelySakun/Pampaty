@@ -11,7 +11,7 @@ class BallsCellVM: CellItemVM {
 		title = "У команды 0 баллов"
 		subtitle = "У ближайшего соперника, команды ДОС, 5 баллов."
 		accessoryDescription = "Все"
-		accessory = UIUtils.chevron
+		accessory = UIHelpers.chevron
 	}
 
 }

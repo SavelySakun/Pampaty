@@ -1,6 +1,6 @@
 import UIKit
 
-class UIUtils {
+class UIHelpers {
 
 	public static let padding = 12
 

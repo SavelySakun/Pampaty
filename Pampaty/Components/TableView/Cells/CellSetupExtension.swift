@@ -43,25 +43,25 @@ extension Cell {
 		leftItemView.snp.makeConstraints { (make) in
 			make.width.height.equalTo(45)
 			make.centerY.equalToSuperview()
-			make.left.equalTo(contentView.snp.left).offset(UIUtils.padding)
+			make.left.equalTo(contentView.snp.left).offset(UIHelpers.padding)
 		}
 	}
 
 	private func setupTextContent() {
 		textContent.snp.makeConstraints { (make) in
 			if leftItemView.imageView.image == nil {
-				make.left.equalTo(contentView.snp.left).offset(UIUtils.padding)
+				make.left.equalTo(contentView.snp.left).offset(UIHelpers.padding)
 			} else {
-				make.left.equalTo(leftItemView.snp.right).offset(UIUtils.padding)
+				make.left.equalTo(leftItemView.snp.right).offset(UIHelpers.padding)
 			}
-			make.top.equalTo(contentView.snp.top).offset(UIUtils.padding)
-			make.bottom.equalTo(contentView.snp.bottom).offset(-UIUtils.padding)
+			make.top.equalTo(contentView.snp.top).offset(UIHelpers.padding)
+			make.bottom.equalTo(contentView.snp.bottom).offset(-UIHelpers.padding)
 		}
 	}
 
 	private func setupAccessoryDescription() {
 		accessoryDescription.snp.makeConstraints { (make) in
-			make.left.equalTo(textContent.snp.right).offset(UIUtils.padding)
+			make.left.equalTo(textContent.snp.right).offset(UIHelpers.padding)
 			make.centerY.equalTo(textContent.snp.centerY)
 		}
 	}
@@ -71,7 +71,7 @@ extension Cell {
 		let isAccessoryAvailable = accessory.frame.width > 0
 		accessory.snp.makeConstraints { (make) in
 			make.left.equalTo(accessoryDescription.snp.right).offset(
-				isAccessoryAvailable ? UIUtils.padding : 0)
+				isAccessoryAvailable ? UIHelpers.padding : 0)
 			if !isAccessoryPicker {
 				make.width.equalTo(accessory.sizeThatFits(CGSize(width: accessory.frame.width, height: accessory.frame.height)))
 			}

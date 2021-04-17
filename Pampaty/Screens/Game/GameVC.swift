@@ -18,7 +18,7 @@ class GameVC: ViewControllerWithTable {
 	func setContainer() {
 		view.addSubview(footer)
 		footer.snp.makeConstraints { (make) in
-			make.height.equalTo(view.frame.height * 0.3)
+			make.height.equalTo(view.frame.height * 0.4)
 			make.left.equalToSuperview().offset(20)
 			make.right.bottom.equalToSuperview().offset(-20)
 		}
