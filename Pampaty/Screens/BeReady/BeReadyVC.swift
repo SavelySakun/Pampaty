@@ -2,8 +2,9 @@ import UIKit
 
 class BeReadyVC: ViewControllerWithTable {
 	override func setProperties() {
-		self.screenVM = BeReadyVM()
-		self.button = Button(title: "Старт", backgroundColor: .systemBlue)
+		screenVM = BeReadyVM()
+		button = Button(title: "Старт", backgroundColor: .systemBlue)
+		title = "Приготовьтесь"
 	}
 
 	@objc override func onButtonTouch() {

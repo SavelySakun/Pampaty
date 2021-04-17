@@ -1,20 +1,19 @@
 import UIKit
 
-class GameSettingsVM {
-	var tableSections: [TableSection] = [
-
-		TableSection(title: "Команды", items: [
-			NumberOfTeamsCellVM(),
-			TeamsInGameCellVM()
-		]),
-
-		TableSection(title: "Игра", items: [
-			RoundTimingCellVM(),
-			RoundNumbersCellVM()
-		]),
-
-		TableSection(title: "Фишки", items: [
-			ModificationCellVM()
-		])
-	]
+class GameSettingsVM: VCWithTableVM {
+	override func setProperties() {
+		tableSections = [
+			TableSection(title: "Команды", items: [
+				NumberOfTeamsCellVM(),
+				TeamsInGameCellVM()
+			]),
+			TableSection(title: "Игра", items: [
+				RoundTimingCellVM(),
+				RoundNumbersCellVM()
+			]),
+			TableSection(title: "Фишки", items: [
+				ModificationCellVM()
+			])
+		]
+	}
 }
