@@ -24,7 +24,7 @@ class TableHeaderView: UIView {
 		stack.snp.makeConstraints { (make) in
 			make.top.equalTo(snp.top).offset(20)
 			make.left.equalTo(snp.left).offset(20)
-			make.bottom.equalTo(snp.bottom).offset(14)
+			make.bottom.equalTo(snp.bottom)
 		}
 	}
 	

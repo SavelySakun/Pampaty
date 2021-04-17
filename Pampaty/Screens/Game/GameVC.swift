@@ -2,7 +2,7 @@ import UIKit
 
 class GameVC: ViewControllerWithTable {
 
-	let collectionView = CollectionView()
+	let footer = CollectionViewContainer()
 	
 	override func setProperties() {
 		screenVM = GameVM()
@@ -12,21 +12,13 @@ class GameVC: ViewControllerWithTable {
 		super.setLayout()
 		title = "Игра"
 		view.backgroundColor = .defaultGray
-		setTableConstraints()
-		setCollectionViewConstraints()
+		setContainer()
 	}
 
-	override func setTableConstraints() {
-		tableView.snp.makeConstraints { (make) in
-			make.top.left.right.equalToSuperview()
-			make.height.equalTo(view.frame.height / 2)
-		}
-	}
-
-	func setCollectionViewConstraints() {
-		view.addSubview(collectionView)
-		collectionView.snp.makeConstraints { (make) in
-			make.top.lessThanOrEqualTo(tableView.snp.bottom)
+	func setContainer() {
+		view.addSubview(footer)
+		footer.snp.makeConstraints { (make) in
+			make.height.equalTo(view.frame.height * 0.3)
 			make.left.equalToSuperview().offset(20)
 			make.right.bottom.equalToSuperview().offset(-20)
 		}
