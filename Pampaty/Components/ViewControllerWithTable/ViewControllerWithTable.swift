@@ -4,7 +4,8 @@ class ViewControllerWithTable: UIViewController {
 
 	var tableHeaderView: TableHeaderView?
 	var tableView = UITableView(frame: .zero, style: .insetGrouped)
-	var screenVM = BeReadyVM()
+	var screenVM: VCWithTableVM!
+	var button: Button?
 
 	// Use for configure VC props
 	func setProperties() { }
@@ -18,6 +19,7 @@ class ViewControllerWithTable: UIViewController {
 	func setLayout() {
 		view.backgroundColor = .white
 		addTableView()
+		addButton()
 	}
 
 	private func addTableView() {
@@ -37,5 +39,19 @@ class ViewControllerWithTable: UIViewController {
 		tableView.snp.makeConstraints { (make) in
 			make.top.left.bottom.right.equalToSuperview()
 		}
+	}
+
+	func addButton() {
+		guard let button = button else { return }
+		view.addSubview(button)
+		button.snp.makeConstraints { (make) in
+			make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+			make.centerX.equalTo(view.safeAreaLayoutGuide.snp.centerX)
+		}
+		button.addTarget(self, action: #selector(onButtonTouch), for: .touchUpInside)
+	}
+
+	@objc func onButtonTouch() {
+		AppDelegate.sceneDelegate?.navigationController.pushViewController(BeReadyVC(), animated: true)
 	}
 }

@@ -1,6 +1,11 @@
 import UIKit
 
-class VCWithTableVM {
+protocol VCWithTableProtocol {
+	var tableHeader: TableHeader? { get set }
+	var tableSections: [TableSection]? { get set }
+}
+
+class VCWithTableVM: VCWithTableProtocol {
 	var tableHeader: TableHeader?
 	var tableSections: [TableSection]?
 
