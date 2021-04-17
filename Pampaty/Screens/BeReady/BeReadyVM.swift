@@ -8,7 +8,7 @@ class BeReadyVM: VCWithTableVM {
 	}
 
 	override func setProperties() {
-		tableHeader = TableHeader(title: "Ход команды", subtitle: "Пупсики")
+		tableHeader = TableHeader(title: "Пупсики", subtitle: "Ход команды")
 
 		tableSections = [
 			TableSection(title: "Команды", items: [

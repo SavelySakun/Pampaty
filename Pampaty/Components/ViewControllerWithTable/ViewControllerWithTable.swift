@@ -16,6 +16,11 @@ class ViewControllerWithTable: UIViewController {
 		setLayout()
 	}
 
+	override func viewWillLayoutSubviews() {
+		super.viewWillLayoutSubviews()
+		updateTableHeaderHeight()
+	}
+
 	func setLayout() {
 		view.backgroundColor = .white
 		addTableView()
@@ -31,7 +36,7 @@ class ViewControllerWithTable: UIViewController {
 		guard let tableHeaderContent = screenVM.tableHeader else { return }
 		tableHeaderView = TableHeaderView(
 			title: tableHeaderContent.title, subtitle: tableHeaderContent.subtitle,
-			frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 40))
+			frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: .zero))
 		tableView.tableHeaderView = tableHeaderView
 	}
 
@@ -53,5 +58,11 @@ class ViewControllerWithTable: UIViewController {
 
 	@objc func onButtonTouch() {
 		AppDelegate.sceneDelegate?.navigationController.pushViewController(BeReadyVC(), animated: true)
+	}
+
+	private func updateTableHeaderHeight() {
+		guard let tableViewHeader = tableView.tableHeaderView else { return }
+		let newSize = tableViewHeader.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+		tableViewHeader.frame.size.height = newSize.height
 	}
 }
