@@ -51,6 +51,7 @@
 		FCE826AC25DAC6730045D1D2 /* UIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE826AB25DAC6730045D1D2 /* UIHelpers.swift */; };
 		FCF4D414262AF9C7005DE536 /* StageResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4D413262AF9C7005DE536 /* StageResultVC.swift */; };
 		FCF4D418262AF9F0005DE536 /* StageResultVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4D417262AF9F0005DE536 /* StageResultVM.swift */; };
+		FCF4E5972631C471005DE536 /* LabelImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4E5962631C471005DE536 /* LabelImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		FCE826AB25DAC6730045D1D2 /* UIHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelpers.swift; sourceTree = "<group>"; };
 		FCF4D413262AF9C7005DE536 /* StageResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageResultVC.swift; sourceTree = "<group>"; };
 		FCF4D417262AF9F0005DE536 /* StageResultVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageResultVM.swift; sourceTree = "<group>"; };
+		FCF4E5962631C471005DE536 /* LabelImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,6 +333,7 @@
 				FC7591D325F63387008A9A54 /* SmallPicker.swift */,
 				FC8AB10E26074CA500BF5AA4 /* LeftItemView.swift */,
 				FCD2D018260F2A0000DDBC8E /* Button.swift */,
+				FCF4E5962631C471005DE536 /* LabelImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				FC7591D425F63387008A9A54 /* SmallPicker.swift in Sources */,
 				FCCB6A3B25FE5B0C006084A7 /* RoundNumbersCellVM.swift in Sources */,
 				FC81647826188C4900A363D4 /* VCWithTableVM.swift in Sources */,
+				FCF4E5972631C471005DE536 /* LabelImageView.swift in Sources */,
 				FCE826A725DAC4610045D1D2 /* Cell.swift in Sources */,
 				FC48DB3925DEBBE00024CB87 /* TableViewItems.swift in Sources */,
 				FC8164B9261B6AC000A363D4 /* SmallCollectionViewCell.swift in Sources */,
