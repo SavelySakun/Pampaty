@@ -14,7 +14,7 @@ class StageResultVM: VCWithTableVM {
 			TableSection(
 				title: "Итого",
 				items: [
-					CellItemVM(title: "Всего баллов", accessory: UIHelpers.getAcessory(.chevron))
+					CellItemVM(title: "Всего баллов", accessory: LabelImageView(text: "23", imageName: "rosette"))
 				])
 		]
 	}

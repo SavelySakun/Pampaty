@@ -3,7 +3,7 @@ import UIKit
 extension Cell {
 
 	func setupCellLayout() {
-		setupLabelsAndAccessory()
+		setupLabelsAndAccessoryDescription()
 		setupConstraints()
 	}
 
@@ -23,7 +23,7 @@ extension Cell {
 		}
 	}
 
-	private func setupLabelsAndAccessory() {
+	private func setupLabelsAndAccessoryDescription() {
 		title.font = UIFont.systemFont(ofSize: 18, weight: .regular)
 		subtitle.font = UIFont.systemFont(ofSize: 14, weight: .regular)
 		subtitle.numberOfLines = 3
@@ -62,27 +62,19 @@ extension Cell {
 
 	private func setupAccessoryDescription() {
 		accessoryDescription.snp.makeConstraints { (make) in
-			make.left.equalTo(textContent.snp.right).offset(UIHelpers.padding)
+			make.left.greaterThanOrEqualTo(textContent.snp.right).offset(UIHelpers.padding)
 			make.centerY.equalTo(textContent.snp.centerY)
 		}
 	}
 
 	private func setupAccessory() {
-		let isAccessoryPicker = accessory is SmallPicker
 		let isAccessoryAvailable = accessory.frame.width > 0
-
 		accessory.snp.makeConstraints { (make) in
-
 			make.left.equalTo(accessoryDescription.snp.right).offset(
 				isAccessoryAvailable ? UIHelpers.padding : 0)
-
-			if !isAccessoryPicker {
-				make.width.equalTo(accessory.sizeThatFits(CGSize(width: accessory.frame.width, height: accessory.frame.height)))
-			}
-
 			make.centerY.equalTo(contentView.snp.centerY)
-			make.right.equalTo(contentView.snp.right).offset(
-				isAccessoryAvailable ? -14 : 0)
+			make.right.equalTo(contentView.snp.right).offset(-UIHelpers.padding)
+
 		}
 	}
 }
