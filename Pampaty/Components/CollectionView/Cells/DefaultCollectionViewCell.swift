@@ -1,11 +1,10 @@
 import UIKit
-import SnapKit
 
-class SmallCollectionViewCell: UICollectionViewCell {
+class DefaultCollectionViewCell: UICollectionViewCell {
+
 	let containerView = UIView()
 	let titleLabel = UIHelpers.getCustomLabel(size: 14, color: .systemGray)
 	let contentLabel = UIHelpers.getTitleLabel()
-	let iconImageView = UIImageView(image: UIImage(systemName: "square.and.arrow.down.fill"))
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -16,15 +15,14 @@ class SmallCollectionViewCell: UICollectionViewCell {
 		fatalError("init(coder:) has not been implemented")
 	}
 
-	private func setLayout() {
+	func setLayout() {
 		contentView.backgroundColor = .clear
 		setTitleLabel()
 		setContainer()
 		setContentLabel()
-		setIcon()
 	}
 
-	private func setTitleLabel() {
+	func setTitleLabel() {
 		contentView.addSubview(titleLabel)
 		titleLabel.text = "ОСТАЛОСЬ"
 		titleLabel.snp.makeConstraints { (make) in
@@ -34,7 +32,7 @@ class SmallCollectionViewCell: UICollectionViewCell {
 		}
 	}
 
-	private func setContainer() {
+	func setContainer() {
 		containerView.backgroundColor = .white
 		containerView.layer.cornerRadius = 14
 		contentView.addSubview(containerView)
@@ -44,7 +42,7 @@ class SmallCollectionViewCell: UICollectionViewCell {
 		}
 	}
 
-	private func setContentLabel() {
+	func setContentLabel() {
 		contentLabel.text = "57"
 		contentLabel.font = UIFont.systemFont(ofSize: 34)
 		containerView.addSubview(contentLabel)
@@ -55,12 +53,7 @@ class SmallCollectionViewCell: UICollectionViewCell {
 		}
 	}
 
-	private func setIcon() {
-		containerView.addSubview(iconImageView)
-		iconImageView.snp.makeConstraints { (make) in
-			make.left.equalTo(contentLabel.snp.right).offset(15)
-			make.centerY.equalTo(contentLabel.snp.centerY)
-			make.right.equalTo(containerView.snp.right).offset(-23)
-		}
+	func setContent() {
+
 	}
 }
