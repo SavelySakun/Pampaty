@@ -1,53 +1,16 @@
 import UIKit
 import SnapKit
 
-class BigCollectionViewCell: UICollectionViewCell {
-	let containerView = UIView()
-	let titleLabel = UIHelpers.getCustomLabel(size: 14, color: .systemGray)
-	let contentLabel = UIHelpers.getTitleLabel()
+class BigCollectionViewCell: DefaultCollectionViewCell {
 	let leftButton = Button(title: "Пропустить", backgroundColor: .systemGray3)
 	let rightButton = Button(title: "Отгадано", backgroundColor: .systemGreen)
 
-	override init(frame: CGRect) {
-		super.init(frame: frame)
-		setLayout()
-	}
-
-	required init?(coder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
-	}
-
-	private func setLayout() {
-		contentView.backgroundColor = .clear
-
-		setTitleLabel()
-		setContainer()
-		setContentLabel()
+	override func setLayout() {
+		super.setLayout()
 		setButtons()
 	}
 
-	private func setTitleLabel() {
-		contentView.addSubview(titleLabel)
-		titleLabel.text = "ОТГАДАТЬ"
-		titleLabel.snp.makeConstraints { (make) in
-			make.top.equalTo(contentView.snp.top)
-			make.left.equalTo(contentView.snp.left).offset(19)
-			make.right.equalTo(contentView.snp.right)
-		}
-	}
-
-	private func setContainer() {
-		containerView.backgroundColor = .white
-		containerView.layer.cornerRadius = 14
-
-		contentView.addSubview(containerView)
-		containerView.snp.makeConstraints { (make) in
-			make.top.equalTo(titleLabel.snp.bottom).offset(10)
-			make.left.bottom.right.equalToSuperview()
-		}
-	}
-
-	private func setContentLabel() {
+	override func setContentLabel() {
 		contentLabel.text = "Яблоко"
 		contentLabel.font = UIFont.systemFont(ofSize: 34)
 		contentLabel.textAlignment = .center
