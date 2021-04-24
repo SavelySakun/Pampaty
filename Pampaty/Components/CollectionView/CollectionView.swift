@@ -2,7 +2,8 @@ import UIKit
 
 class CollectionView: UICollectionView {
 
-	var data: [Any] = []
+	var smallCollectionViewsVMs: [SmallCollectionViewCellVM]?
+	var bigCollectionViewsVMs: BigCollectionViewCellVM?
 
 	override var contentSize: CGSize {
 		didSet {
@@ -50,13 +51,17 @@ extension CollectionView: UICollectionViewDataSource {
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		var cell = UICollectionViewCell()
 		if indexPath.section < 1 {
-			cell = dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+			guard let cell = dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? SmallCollectionViewCell else { return UICollectionViewCell()}
+			let item = smallCollectionViewsVMs?[indexPath.row]
+			cell.setContent(titleText: item!.title, contentText: item!.contentText, imageName: item!.iconImageName)
+			return cell
 		} else {
-			cell = dequeueReusableCell(withReuseIdentifier: "BigCell", for: indexPath)
+			guard let cell = dequeueReusableCell(withReuseIdentifier: "BigCell", for: indexPath) as? BigCollectionViewCell else { return UICollectionViewCell() }
+			let item = bigCollectionViewsVMs
+			cell.setContent(titleText: item!.title, contentText: item!.contentText, leftButton: item!.leftButton!, rightButton: item!.rightButton!)
+			return cell
 		}
-		return cell
 	}
 
 	func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

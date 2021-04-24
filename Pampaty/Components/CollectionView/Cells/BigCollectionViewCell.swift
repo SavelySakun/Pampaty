@@ -2,16 +2,14 @@ import UIKit
 import SnapKit
 
 class BigCollectionViewCell: DefaultCollectionViewCell {
-	let leftButton = Button(title: "Пропустить", backgroundColor: .systemGray3)
-	let rightButton = Button(title: "Отгадано", backgroundColor: .systemGreen)
+	var leftButton = Button()
+	var rightButton = Button()
 
 	override func setLayout() {
 		super.setLayout()
-		setButtons()
 	}
 
 	override func setContentLabel() {
-		contentLabel.text = "Яблоко"
 		contentLabel.font = UIFont.systemFont(ofSize: 34)
 		contentLabel.textAlignment = .center
 
@@ -36,5 +34,12 @@ class BigCollectionViewCell: DefaultCollectionViewCell {
 			make.right.equalTo(containerView.snp.right).offset(-20)
 			make.bottom.equalTo(containerView.snp.bottom).offset(-30)
 		}
+	}
+
+	func setContent(titleText: String, contentText: String, leftButton: Button, rightButton: Button) {
+		super.setContent(titleText: titleText, contentText: contentText)
+		self.leftButton = leftButton
+		self.rightButton = rightButton
+		setButtons()
 	}
 }

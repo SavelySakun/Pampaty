@@ -22,9 +22,13 @@ class DefaultCollectionViewCell: UICollectionViewCell {
 		setContentLabel()
 	}
 
+	func setContent(titleText: String, contentText: String) {
+		titleLabel.text = titleText
+		contentLabel.text = contentText
+	}
+
 	func setTitleLabel() {
 		contentView.addSubview(titleLabel)
-		titleLabel.text = "ОСТАЛОСЬ"
 		titleLabel.snp.makeConstraints { (make) in
 			make.top.equalTo(contentView.snp.top)
 			make.left.equalTo(contentView.snp.left).offset(19)
@@ -43,7 +47,6 @@ class DefaultCollectionViewCell: UICollectionViewCell {
 	}
 
 	func setContentLabel() {
-		contentLabel.text = "57"
 		contentLabel.font = UIFont.systemFont(ofSize: 34)
 		containerView.addSubview(contentLabel)
 		contentLabel.snp.makeConstraints { (make) in
@@ -53,7 +56,4 @@ class DefaultCollectionViewCell: UICollectionViewCell {
 		}
 	}
 
-	func setContent() {
-
-	}
 }

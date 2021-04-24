@@ -2,7 +2,7 @@ import UIKit
 import SnapKit
 
 class SmallCollectionViewCell: DefaultCollectionViewCell {
-	let iconImageView = UIImageView(image: UIImage(systemName: "square.and.arrow.down.fill"))
+	let iconImageView = UIImageView()
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -20,7 +20,6 @@ class SmallCollectionViewCell: DefaultCollectionViewCell {
 	}
 
 	override func setContentLabel() {
-		contentLabel.text = "57"
 		contentLabel.font = UIFont.systemFont(ofSize: 34)
 		containerView.addSubview(contentLabel)
 		contentLabel.snp.makeConstraints { (make) in
@@ -38,4 +37,11 @@ class SmallCollectionViewCell: DefaultCollectionViewCell {
 			make.right.equalTo(containerView.snp.right).offset(-23)
 		}
 	}
+
+	func setContent(titleText: String, contentText: String, imageName: String) {
+		super.setContent(titleText: titleText, contentText: contentText)
+		let image = UIImage(systemName: imageName)
+		iconImageView.image = image
+	}
+
 }

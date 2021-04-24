@@ -2,8 +2,9 @@ import UIKit
 
 class Button: UIButton {
 
-	init(title: String, backgroundColor: UIColor? = nil) {
+	init(title: String? = nil, backgroundColor: UIColor? = nil) {
 		super.init(frame: .zero)
+		guard let title = title else { return }
 		setButton(title: title, backgroundColor: backgroundColor ?? .systemBlue)
 	}
 
