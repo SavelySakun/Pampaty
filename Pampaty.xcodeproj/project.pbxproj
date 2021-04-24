@@ -19,6 +19,7 @@
 		FC31CABD2603B21C0085A59C /* CellItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31CABC2603B21C0085A59C /* CellItemVM.swift */; };
 		FC46376026074426009CDEE4 /* CellSetupExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC46375F26074426009CDEE4 /* CellSetupExtension.swift */; };
 		FC48DB3925DEBBE00024CB87 /* TableViewItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */; };
+		FC60E50A2633D0C100421CAB /* GameCollectionViewVMs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC60E5092633D0C100421CAB /* GameCollectionViewVMs.swift */; };
 		FC66F941262ADDF50020F0ED /* CollectionViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66F940262ADDF50020F0ED /* CollectionViewContainer.swift */; };
 		FC7591C825F616CB008A9A54 /* GameSettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */; };
 		FC7591CD25F6270F008A9A54 /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */; };
@@ -56,7 +57,7 @@
 		FCF4E5B42631DA90005DE536 /* SmallCollectionViewCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4E5B32631DA90005DE536 /* SmallCollectionViewCellVM.swift */; };
 		FCF4E5BA2631DBD8005DE536 /* BigCollectionViewCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4E5B92631DBD8005DE536 /* BigCollectionViewCellVM.swift */; };
 		FCF4E5BF2631DDE1005DE536 /* TimeLeftCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4E5BE2631DDE1005DE536 /* TimeLeftCellVM.swift */; };
-		FCF4E5C32631DE03005DE536 /* TotalBallsCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4E5C22631DE03005DE536 /* TotalBallsCellVM.swift */; };
+		FCF4E5C32631DE03005DE536 /* TotalScoreCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4E5C22631DE03005DE536 /* TotalScoreCellVM.swift */; };
 		FCF4E5C92631DE82005DE536 /* QuestionCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4E5C82631DE82005DE536 /* QuestionCellVM.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		FC31CABC2603B21C0085A59C /* CellItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellItemVM.swift; sourceTree = "<group>"; };
 		FC46375F26074426009CDEE4 /* CellSetupExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupExtension.swift; sourceTree = "<group>"; };
 		FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewItems.swift; sourceTree = "<group>"; };
+		FC60E5092633D0C100421CAB /* GameCollectionViewVMs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectionViewVMs.swift; sourceTree = "<group>"; };
 		FC66F940262ADDF50020F0ED /* CollectionViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewContainer.swift; sourceTree = "<group>"; };
 		FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsVM.swift; sourceTree = "<group>"; };
 		FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -125,7 +127,7 @@
 		FCF4E5B32631DA90005DE536 /* SmallCollectionViewCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCollectionViewCellVM.swift; sourceTree = "<group>"; };
 		FCF4E5B92631DBD8005DE536 /* BigCollectionViewCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigCollectionViewCellVM.swift; sourceTree = "<group>"; };
 		FCF4E5BE2631DDE1005DE536 /* TimeLeftCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLeftCellVM.swift; sourceTree = "<group>"; };
-		FCF4E5C22631DE03005DE536 /* TotalBallsCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalBallsCellVM.swift; sourceTree = "<group>"; };
+		FCF4E5C22631DE03005DE536 /* TotalScoreCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalScoreCellVM.swift; sourceTree = "<group>"; };
 		FCF4E5C82631DE82005DE536 /* QuestionCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCellVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,6 +215,7 @@
 				FCF4E5BD2631DDB1005DE536 /* Game Items VMs */,
 				FC8164A5261B647800A363D4 /* GameVC.swift */,
 				FC8164A9261B648100A363D4 /* GameVM.swift */,
+				FC60E5092633D0C100421CAB /* GameCollectionViewVMs.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -275,8 +278,8 @@
 			children = (
 				FC94D72625D92AED000FF2B6 /* GameSettings */,
 				FC31CAAF2603ABC60085A59C /* Teams */,
-				FC8164A2261B612900A363D4 /* Game */,
 				FCD2D0202610772F00DDBC8E /* BeReady */,
+				FC8164A2261B612900A363D4 /* Game */,
 				FCF4D412262AF9B0005DE536 /* StageResult */,
 			);
 			path = Screens;
@@ -395,7 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				FCF4E5BE2631DDE1005DE536 /* TimeLeftCellVM.swift */,
-				FCF4E5C22631DE03005DE536 /* TotalBallsCellVM.swift */,
+				FCF4E5C22631DE03005DE536 /* TotalScoreCellVM.swift */,
 				FCF4E5C82631DE82005DE536 /* QuestionCellVM.swift */,
 			);
 			path = "Game Items VMs";
@@ -404,9 +407,9 @@
 		FCF4E5D32631DF99005DE536 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				FCF4E5A42631D4A0005DE536 /* DefaultCollectionViewCell.swift */,
 				FC8164B8261B6AC000A363D4 /* SmallCollectionViewCell.swift */,
 				FCAAEF3A2625F7E4004DB290 /* BigCollectionViewCell.swift */,
-				FCF4E5A42631D4A0005DE536 /* DefaultCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 				FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */,
 				FC66F941262ADDF50020F0ED /* CollectionViewContainer.swift in Sources */,
 				FC00848A26161EDC00448849 /* GameCellVM.swift in Sources */,
+				FC60E50A2633D0C100421CAB /* GameCollectionViewVMs.swift in Sources */,
 				FC31CAB52603AD1B0085A59C /* TeamsVC.swift in Sources */,
 				FCAAEF3B2625F7E4004DB290 /* BigCollectionViewCell.swift in Sources */,
 				FCD2D02A261077C600DDBC8E /* TableHeaderView.swift in Sources */,
@@ -607,7 +611,7 @@
 				FC00848F26161FDD00448849 /* BallsCellVM.swift in Sources */,
 				FC31CABD2603B21C0085A59C /* CellItemVM.swift in Sources */,
 				FC7591CD25F6270F008A9A54 /* CellViewModelProtocol.swift in Sources */,
-				FCF4E5C32631DE03005DE536 /* TotalBallsCellVM.swift in Sources */,
+				FCF4E5C32631DE03005DE536 /* TotalScoreCellVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

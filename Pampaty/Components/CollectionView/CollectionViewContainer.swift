@@ -4,8 +4,10 @@ class CollectionViewContainer: UIView {
 
 	let collectionView = CollectionView()
 
-	override init(frame: CGRect) {
-		super.init(frame: frame)
+	init(smallCollectionViewVMs: [SmallCollectionViewCellVM], bigCollectionCellVMs: BigCollectionViewCellVM) {
+		super.init(frame: .zero)
+		collectionView.smallCollectionViewsVMs = smallCollectionViewVMs
+		collectionView.bigCollectionViewsVMs = bigCollectionCellVMs
 		setLayout()
 	}
 
