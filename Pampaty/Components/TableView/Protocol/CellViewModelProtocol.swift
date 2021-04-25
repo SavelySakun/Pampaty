@@ -14,7 +14,7 @@ protocol CellViewModelProtocol: AnyObject {
 	/// Short text with additional information about accessory action.
 	var accessoryDescription: String? { get set }
 
-	var leftItemView: LeftItemView? { get set }
+	var leftItemView: UIView? { get set }
   var selectionStyle: UITableViewCell.SelectionStyle { get set }
   func onCellSelection()
 	var delegate: CellProtocol? { get set }

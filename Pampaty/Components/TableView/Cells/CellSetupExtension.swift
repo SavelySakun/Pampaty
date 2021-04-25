@@ -23,38 +23,18 @@ extension Cell {
 		}
 	}
 
-	private func setupLabelsAndAccessoryDescription() {
-		title.font = UIFont.systemFont(ofSize: 18, weight: .regular)
-		subtitle.font = UIFont.systemFont(ofSize: 14, weight: .regular)
-		subtitle.numberOfLines = 3
-		subtitle.textColor = .systemGray
-		accessoryDescription.font = UIFont.systemFont(ofSize: 18, weight: .regular)
-		accessoryDescription.textAlignment = .right
-		accessoryDescription.textColor = .systemGray
-
-		textContent = UIStackView(arrangedSubviews: [title, subtitle])
-		textContent.axis = .vertical
-		textContent.distribution = .equalSpacing
-		textContent.isUserInteractionEnabled = true
-		guard let textCheckInSubtitle = subtitle.text?.isEmpty, !textCheckInSubtitle else { return }
-		textContent.spacing = 8
-	}
-
 	private func setupLeftItemView() {
 		leftItemView.snp.makeConstraints { (make) in
-			make.width.height.equalTo(45)
 			make.centerY.equalToSuperview()
+			make.top.equalToSuperview().offset(8)
+			make.bottom.equalToSuperview().offset(-8)
 			make.left.equalTo(contentView.snp.left).offset(UIHelpers.padding)
 		}
 	}
 
 	private func setupTextContent() {
 		textContent.snp.makeConstraints { (make) in
-			if leftItemView.imageView.image == nil {
-				make.left.equalTo(contentView.snp.left).offset(UIHelpers.padding)
-			} else {
-				make.left.equalTo(leftItemView.snp.right).offset(UIHelpers.padding)
-			}
+			make.left.equalTo(leftItemView.snp.right).offset(UIHelpers.padding)
 			make.top.equalTo(contentView.snp.top).offset(UIHelpers.padding)
 			make.bottom.equalTo(contentView.snp.bottom).offset(-UIHelpers.padding)
 		}

@@ -7,4 +7,8 @@ class GameSettingsVC: ViewControllerWithTable {
 		title = "Настройка игры"
 		navigationController?.navigationBar.prefersLargeTitles = true
 	}
+
+	override func onButtonTouch() {
+		AppDelegate.sceneDelegate?.navigationController.pushViewController(GameFinalVC(), animated: true)
+	}
 }
