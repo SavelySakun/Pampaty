@@ -16,16 +16,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pampaty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zJ-LJ-WeJ">
-                                <rect key="frame" x="160" y="438" width="94.5" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="133" y="431.5" width="148" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="be_ready5" translatesAutoresizingMaskIntoConstraints="NO" id="ccl-Ef-2U8">
+                                <rect key="frame" x="20" y="595.5" width="380" height="391.5"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.60784313725490191" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="9zJ-LJ-WeJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="IIc-CC-GFN"/>
+                            <constraint firstItem="ccl-Ef-2U8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NpE-qp-Sj4"/>
+                            <constraint firstItem="ccl-Ef-2U8" firstAttribute="top" secondItem="9zJ-LJ-WeJ" secondAttribute="bottom" constant="121" id="bF6-H8-sfh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ccl-Ef-2U8" secondAttribute="trailing" constant="14" id="eXD-73-QSz"/>
+                            <constraint firstAttribute="bottom" secondItem="ccl-Ef-2U8" secondAttribute="bottom" constant="-91" id="nk0-I0-p7U"/>
                             <constraint firstItem="9zJ-LJ-WeJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ugb-Ak-iha"/>
                         </constraints>
                     </view>
@@ -35,4 +42,7 @@
             <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="be_ready5" width="1290" height="912"/>
+    </resources>
 </document>

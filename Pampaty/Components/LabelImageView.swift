@@ -11,15 +11,17 @@ class LabelImageView: UIView {
 		label.text = text
 		let image = UIImage(systemName: imageName)?.withRenderingMode(.alwaysTemplate)
 		imageView.image = image
+		imageView.contentMode = .scaleAspectFit
 
 		setStackView()
 	}
 	
 	private func setStackView() {
 		let stackView = UIStackView(arrangedSubviews: [label, imageView])
-		stackView.spacing = 8
+		stackView.spacing = 4
 		stackView.axis = .horizontal
-		stackView.distribution = .fillProportionally
+		stackView.distribution = .fill
+		stackView.alignment = .center
 
 		addSubview(stackView)
 		stackView.snp.makeConstraints { (make) in

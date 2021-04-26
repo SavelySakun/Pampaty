@@ -20,6 +20,11 @@
 		FC46376026074426009CDEE4 /* CellSetupExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC46375F26074426009CDEE4 /* CellSetupExtension.swift */; };
 		FC48DB3925DEBBE00024CB87 /* TableViewItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */; };
 		FC60E50A2633D0C100421CAB /* GameCollectionViewVMs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC60E5092633D0C100421CAB /* GameCollectionViewVMs.swift */; };
+		FC60E5472633F4BC00421CAB /* GameFinalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC60E5462633F4BC00421CAB /* GameFinalVC.swift */; };
+		FC60E5512633F59B00421CAB /* GameFinalVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC60E5502633F59B00421CAB /* GameFinalVM.swift */; };
+		FC60E5C22635936300421CAB /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC60E5C12635936300421CAB /* ScoreView.swift */; };
+		FC60E5D02635ACB900421CAB /* ImageHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC60E5CF2635ACB900421CAB /* ImageHeaderFooter.swift */; };
+		FC60E68A2637150800421CAB /* BigCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC60E6892637150800421CAB /* BigCell.swift */; };
 		FC66F941262ADDF50020F0ED /* CollectionViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66F940262ADDF50020F0ED /* CollectionViewContainer.swift */; };
 		FC7591C825F616CB008A9A54 /* GameSettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */; };
 		FC7591CD25F6270F008A9A54 /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */; };
@@ -87,6 +92,11 @@
 		FC46375F26074426009CDEE4 /* CellSetupExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSetupExtension.swift; sourceTree = "<group>"; };
 		FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewItems.swift; sourceTree = "<group>"; };
 		FC60E5092633D0C100421CAB /* GameCollectionViewVMs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectionViewVMs.swift; sourceTree = "<group>"; };
+		FC60E5462633F4BC00421CAB /* GameFinalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFinalVC.swift; sourceTree = "<group>"; };
+		FC60E5502633F59B00421CAB /* GameFinalVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFinalVM.swift; sourceTree = "<group>"; };
+		FC60E5C12635936300421CAB /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		FC60E5CF2635ACB900421CAB /* ImageHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHeaderFooter.swift; sourceTree = "<group>"; };
+		FC60E6892637150800421CAB /* BigCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigCell.swift; sourceTree = "<group>"; };
 		FC66F940262ADDF50020F0ED /* CollectionViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewContainer.swift; sourceTree = "<group>"; };
 		FC7591C725F616CB008A9A54 /* GameSettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsVM.swift; sourceTree = "<group>"; };
 		FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -187,6 +197,25 @@
 			path = Teams;
 			sourceTree = "<group>";
 		};
+		FC60E5452633F49B00421CAB /* GameFinal */ = {
+			isa = PBXGroup;
+			children = (
+				FC60E5462633F4BC00421CAB /* GameFinalVC.swift */,
+				FC60E5502633F59B00421CAB /* GameFinalVM.swift */,
+				FC60E5C12635936300421CAB /* ScoreView.swift */,
+				FC60E6892637150800421CAB /* BigCell.swift */,
+			);
+			path = GameFinal;
+			sourceTree = "<group>";
+		};
+		FC60E55A2633F78E00421CAB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		FC75940525F7C5FA008A9A54 /* Game Settings Cells VMs */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +310,7 @@
 				FCD2D0202610772F00DDBC8E /* BeReady */,
 				FC8164A2261B612900A363D4 /* Game */,
 				FCF4D412262AF9B0005DE536 /* StageResult */,
+				FC60E5452633F49B00421CAB /* GameFinal */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -341,6 +371,7 @@
 				FC8AB10E26074CA500BF5AA4 /* LeftItemView.swift */,
 				FCD2D018260F2A0000DDBC8E /* Button.swift */,
 				FCF4E5962631C471005DE536 /* LabelImageView.swift */,
+				FC60E5CF2635ACB900421CAB /* ImageHeaderFooter.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -366,8 +397,8 @@
 		FCE82C3C25DD804B0045D1D2 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				FC60E55A2633F78E00421CAB /* Protocol */,
 				FC48DB3825DEBBE00024CB87 /* TableViewItems.swift */,
-				FC7591CC25F6270F008A9A54 /* CellViewModelProtocol.swift */,
 				FC31CABC2603B21C0085A59C /* CellItemVM.swift */,
 				FCD2D029261077C600DDBC8E /* TableHeaderView.swift */,
 				FCE826A525DAC4500045D1D2 /* Cells */,
@@ -590,9 +621,12 @@
 				FC00849026161FDD00448849 /* CurrentModificationCellVM.swift in Sources */,
 				FC8164B5261B6A7E00A363D4 /* CollectionView.swift in Sources */,
 				FC31CAB92603B0CE0085A59C /* TeamsVM.swift in Sources */,
+				FC60E5512633F59B00421CAB /* GameFinalVM.swift in Sources */,
 				FC00848526161E3300448849 /* BeReadyVM.swift in Sources */,
 				FCD2D0222610775200DDBC8E /* BeReadyVC.swift in Sources */,
+				FC60E5D02635ACB900421CAB /* ImageHeaderFooter.swift in Sources */,
 				FCF4E5C92631DE82005DE536 /* QuestionCellVM.swift in Sources */,
+				FC60E5C22635936300421CAB /* ScoreView.swift in Sources */,
 				FC8164652618849800A363D4 /* ViewControllerWithTable.swift in Sources */,
 				FCE826AC25DAC6730045D1D2 /* UIHelpers.swift in Sources */,
 				FC31C2D925FFA9E80085A59C /* RoundTimingCellVM.swift in Sources */,
@@ -612,6 +646,8 @@
 				FC31CABD2603B21C0085A59C /* CellItemVM.swift in Sources */,
 				FC7591CD25F6270F008A9A54 /* CellViewModelProtocol.swift in Sources */,
 				FCF4E5C32631DE03005DE536 /* TotalScoreCellVM.swift in Sources */,
+				FC60E68A2637150800421CAB /* BigCell.swift in Sources */,
+				FC60E5472633F4BC00421CAB /* GameFinalVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

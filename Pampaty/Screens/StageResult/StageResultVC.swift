@@ -6,4 +6,8 @@ class StageResultVC: ViewControllerWithTable {
 		button = Button(title: "Далее")
 		screenVM = StageResultVM()
 	}
+
+	override func onButtonTouch() {
+		AppDelegate.sceneDelegate?.navigationController.pushViewController(GameFinalVC(), animated: true)
+	}
 }
