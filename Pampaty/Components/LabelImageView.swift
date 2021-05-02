@@ -9,7 +9,7 @@ class LabelImageView: UIView {
 		super.init(frame: .zero)
 
 		label.text = text
-		let image = UIImage(systemName: imageName)?.withRenderingMode(.alwaysTemplate)
+		let image = UIImage(named: imageName)
 		imageView.image = image
 		imageView.contentMode = .scaleAspectFit
 
