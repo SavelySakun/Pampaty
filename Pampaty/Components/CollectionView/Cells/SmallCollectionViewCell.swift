@@ -35,13 +35,15 @@ class SmallCollectionViewCell: DefaultCollectionViewCell {
 			make.left.equalTo(contentLabel.snp.right).offset(15)
 			make.centerY.equalTo(contentLabel.snp.centerY)
 			make.right.equalTo(containerView.snp.right).offset(-23)
+			make.height.width.equalTo(35)
 		}
 	}
 
 	func setContent(titleText: String, contentText: String, imageName: String) {
 		super.setContent(titleText: titleText, contentText: contentText)
-		let image = UIImage(systemName: imageName)
+		let image = UIImage(named: imageName)
 		iconImageView.image = image
+		iconImageView.contentMode = .scaleAspectFit
 	}
 
 }

@@ -8,12 +8,11 @@ class GameVM: VCWithTableVM {
 				TableSection(title: "Игра", items: [
 					CellItemVM(
 						title: "Алиас",
-						subtitle: "Объясните слово, не называя его.")
+						subtitle: "Объясните слово, не называя его.", leftItemView: ScoreView(text: "", imageName: "bulb", size: .standart))
 				]),
 				TableSection(title: "Модификатор", items: [
 					CellItemVM(
-						title: "Шёпот – ведущий",
-						subtitle: "Ведущий объясняет все слова шёпотом.")
+						title: "Шёпот – ведущий", subtitle: "Ведущий объясняет все слова шёпотом.", leftItemView: ScoreView(text: "", imageName: "pig", size: .standart))
 				])
 			])
 	}
