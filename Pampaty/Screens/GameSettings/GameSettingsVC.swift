@@ -10,7 +10,7 @@ class GameSettingsVC: ViewControllerWithTable {
 
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		screenVM.setProperties()
+		screenVM.updateCellsData()
 		tableView.reloadData()
 	}
 

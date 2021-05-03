@@ -1,6 +1,12 @@
 import UIKit
 
+protocol SmallPickerDelegate: AnyObject {
+	func onSmallPickerValueChanged()
+}
+
 class SmallPicker: UIPickerView, UIPickerViewDataSource, UIPickerViewDelegate {
+
+	weak var onChangeDelegate: SmallPickerDelegate?
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -42,6 +48,7 @@ class SmallPicker: UIPickerView, UIPickerViewDataSource, UIPickerViewDelegate {
 
 	func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
 		Logic.manager.set.selectedRoundDuration(withIndex: row)
+		onChangeDelegate?.onSmallPickerValueChanged()
 	}
 	
 }

@@ -15,5 +15,6 @@ class VCWithTableVM: VCWithTableProtocol {
 		setProperties()
 	}
 
-	func setProperties() { }
+	func setProperties() {}
+	func updateCellsData() {}
 }

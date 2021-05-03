@@ -44,6 +44,7 @@ extension ViewControllerWithTable: CellProtocol {
 
 	func onValueChanged() {
 		DispatchQueue.main.async {
+			self.screenVM.updateCellsData()
 			self.tableView.reloadData()
 		}
 	}

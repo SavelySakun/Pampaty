@@ -4,10 +4,9 @@ class RoundNumbersCellVM: CellItemVM {
 
 	override init() {
 		super.init()
-		title = "Раундов"
 		accessory = UIStepper()
 		setupAccessory()
-		updateLabels()
+		updateCellData()
 	}
 
 	func setupAccessory() {
@@ -19,14 +18,15 @@ class RoundNumbersCellVM: CellItemVM {
 		}
 	}
 
-	private func updateLabels() {
-		self.accessoryDescription = String(Logic.manager.get.numberOfRounds())
+	override func updateCellData() {
+		title = "Кол-во раундов"
+		accessoryDescription = String(Logic.manager.get.numberOfRounds())
 		subtitle = "Примерная длительность игры составит \(String(getTotalGameTimeInMinutes())) минут."
 	}
 
 	@objc func onChangeAccessoryValue(sender: UIStepper) {
 		Logic.manager.set.numberOfRounds(value: Int(sender.value))
-		updateLabels()
+		updateCellData()
 		self.delegate?.onValueChanged()
 	}
 
