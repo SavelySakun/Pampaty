@@ -4,7 +4,6 @@ class GameSettingsVM: VCWithTableVM {
 	override func setProperties() {
 		tableSections = [
 			TableSection(title: "Команды", items: [
-				NumberOfTeamsCellVM(),
 				TeamsInGameCellVM()
 			]),
 			TableSection(title: "Игра", items: [

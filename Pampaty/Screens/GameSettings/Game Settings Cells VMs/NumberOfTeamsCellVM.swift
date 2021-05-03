@@ -1,9 +1,10 @@
 import UIKit
 
-protocol NumberOfTeamsDelegate: class {
+protocol NumberOfTeamsDelegate: AnyObject {
 	func onStepperValueChanged()
 }
 
+// УДАЛИТЬ класс, тк не нужна ячейка эта
 class NumberOfTeamsCellVM: CellItemVM {
 
 	override init() {
