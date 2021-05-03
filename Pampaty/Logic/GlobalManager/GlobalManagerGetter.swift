@@ -27,6 +27,10 @@ class GlobalManagerGetter {
 		return values[selectedIndex]
 	}
 
+	func numberOfRounds() -> Int {
+		return gameData.settings.numberOfRounds
+	}
+
 	func currentRound() {}
 	func teamPlayingName() {}
 	func currentGameType() {}

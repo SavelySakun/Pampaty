@@ -17,7 +17,10 @@ class GlobalManagerSetter {
 		gameData.settings.selectedRoundDuration = index
 	}
 
-	func numberOfRounds() {}
+	func numberOfRounds(value: Int) {
+		gameData.settings.numberOfRounds = value
+	}
+
 	func roundDuration() {}
 	func modificators() {}
 }
