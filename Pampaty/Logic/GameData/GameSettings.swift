@@ -2,7 +2,7 @@ import Foundation
 
 class GameSettings {
 	var gameTypes = ""
-	var roundDuration = ""
+	var selectedRoundDuration = 4
 	var numberOfRounds = ""
 	var modificators = ""
 

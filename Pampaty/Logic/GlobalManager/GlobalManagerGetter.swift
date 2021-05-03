@@ -16,6 +16,17 @@ class GlobalManagerGetter {
 		return gameData.settings.teams.count
 	}
 
+	func selectedRoundDuration() -> Int {
+		return gameData.settings.selectedRoundDuration
+	}
+
+	func roundDurationInSeconds() -> Int {
+		let selectedIndex = gameData.settings.selectedRoundDuration
+		let values = GameDataHelpers.shared.roundDurationValues
+		guard selectedIndex < values.count else { return 0 }
+		return values[selectedIndex]
+	}
+
 	func currentRound() {}
 	func teamPlayingName() {}
 	func currentGameType() {}
