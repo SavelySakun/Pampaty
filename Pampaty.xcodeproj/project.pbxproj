@@ -50,6 +50,13 @@
 		FCD2D019260F2A0000DDBC8E /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2D018260F2A0000DDBC8E /* Button.swift */; };
 		FCD2D0222610775200DDBC8E /* BeReadyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2D0212610775200DDBC8E /* BeReadyVC.swift */; };
 		FCD2D02A261077C600DDBC8E /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2D029261077C600DDBC8E /* TableHeaderView.swift */; };
+		FCE003A7263F0A3A0048C251 /* GameOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE003A6263F0A3A0048C251 /* GameOrganizer.swift */; };
+		FCE003A9263F0AA60048C251 /* GlobalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE003A8263F0AA60048C251 /* GlobalManager.swift */; };
+		FCE003AC263FCFFD0048C251 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE003AB263FCFFD0048C251 /* GameData.swift */; };
+		FCE003AF263FD0660048C251 /* GlobalManagerSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE003AE263FD0660048C251 /* GlobalManagerSetter.swift */; };
+		FCE003B1263FD0B10048C251 /* GlobalManagerGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE003B0263FD0B10048C251 /* GlobalManagerGetter.swift */; };
+		FCE003B3263FD0E30048C251 /* CurrentGameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE003B2263FD0E30048C251 /* CurrentGameInfo.swift */; };
+		FCE003B5263FD1190048C251 /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE003B4263FD1190048C251 /* GameSettings.swift */; };
 		FCE8267D25DAC0EB0045D1D2 /* GameSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */; };
 		FCE8268225DAC1BE0045D1D2 /* Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */; };
 		FCE826A725DAC4610045D1D2 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE826A625DAC4610045D1D2 /* Cell.swift */; };
@@ -125,6 +132,13 @@
 		FCD2D018260F2A0000DDBC8E /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		FCD2D0212610775200DDBC8E /* BeReadyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeReadyVC.swift; sourceTree = "<group>"; };
 		FCD2D029261077C600DDBC8E /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		FCE003A6263F0A3A0048C251 /* GameOrganizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOrganizer.swift; sourceTree = "<group>"; };
+		FCE003A8263F0AA60048C251 /* GlobalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalManager.swift; sourceTree = "<group>"; };
+		FCE003AB263FCFFD0048C251 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		FCE003AE263FD0660048C251 /* GlobalManagerSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalManagerSetter.swift; sourceTree = "<group>"; };
+		FCE003B0263FD0B10048C251 /* GlobalManagerGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalManagerGetter.swift; sourceTree = "<group>"; };
+		FCE003B2263FD0E30048C251 /* CurrentGameInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentGameInfo.swift; sourceTree = "<group>"; };
+		FCE003B4263FD1190048C251 /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
 		FCE8267C25DAC0EB0045D1D2 /* GameSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsVC.swift; sourceTree = "<group>"; usesTabs = 1; };
 		FCE8268125DAC1BE0045D1D2 /* Color Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extension.swift"; sourceTree = "<group>"; };
 		FCE826A625DAC4610045D1D2 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
@@ -295,6 +309,7 @@
 			children = (
 				FCB12B4B25CB0E89002ADAEF /* AppDefault */,
 				FCE8268025DAC1A70045D1D2 /* Helpers */,
+				FCE003A5263F0A150048C251 /* Logic */,
 				FCE8267A25DAC09C0045D1D2 /* Components */,
 				FCB12B4225CB0C1D002ADAEF /* Screens */,
 				FCB12B3425CB0A9F002ADAEF /* Assets.xcassets */,
@@ -359,6 +374,44 @@
 				FC00848426161E3300448849 /* BeReadyVM.swift */,
 			);
 			path = BeReady;
+			sourceTree = "<group>";
+		};
+		FCE003A5263F0A150048C251 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				FCE003AD263FD0220048C251 /* GlobalManager */,
+				FCE003AA263FCFEA0048C251 /* GameOrganizer */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		FCE003AA263FCFEA0048C251 /* GameOrganizer */ = {
+			isa = PBXGroup;
+			children = (
+				FCE003A6263F0A3A0048C251 /* GameOrganizer.swift */,
+			);
+			path = GameOrganizer;
+			sourceTree = "<group>";
+		};
+		FCE003AD263FD0220048C251 /* GlobalManager */ = {
+			isa = PBXGroup;
+			children = (
+				FCE003A8263F0AA60048C251 /* GlobalManager.swift */,
+				FCE003B0263FD0B10048C251 /* GlobalManagerGetter.swift */,
+				FCE003AE263FD0660048C251 /* GlobalManagerSetter.swift */,
+				FCE003B6263FD14B0048C251 /* GameData */,
+			);
+			path = GlobalManager;
+			sourceTree = "<group>";
+		};
+		FCE003B6263FD14B0048C251 /* GameData */ = {
+			isa = PBXGroup;
+			children = (
+				FCE003AB263FCFFD0048C251 /* GameData.swift */,
+				FCE003B4263FD1190048C251 /* GameSettings.swift */,
+				FCE003B2263FD0E30048C251 /* CurrentGameInfo.swift */,
+			);
+			path = GameData;
 			sourceTree = "<group>";
 		};
 		FCE8267A25DAC09C0045D1D2 /* Components */ = {
@@ -608,18 +661,23 @@
 				FCF4E5B42631DA90005DE536 /* SmallCollectionViewCellVM.swift in Sources */,
 				FC48DB3925DEBBE00024CB87 /* TableViewItems.swift in Sources */,
 				FC8164B9261B6AC000A363D4 /* SmallCollectionViewCell.swift in Sources */,
+				FCE003A7263F0A3A0048C251 /* GameOrganizer.swift in Sources */,
 				FC46376026074426009CDEE4 /* CellSetupExtension.swift in Sources */,
 				FC141A0525E53B4D0009904F /* NumberOfTeamsCellVM.swift in Sources */,
+				FCE003AF263FD0660048C251 /* GlobalManagerSetter.swift in Sources */,
 				FCB12B2C25CB0A9E002ADAEF /* AppDelegate.swift in Sources */,
+				FCE003A9263F0AA60048C251 /* GlobalManager.swift in Sources */,
 				FC66F941262ADDF50020F0ED /* CollectionViewContainer.swift in Sources */,
 				FC00848A26161EDC00448849 /* GameCellVM.swift in Sources */,
 				FC60E50A2633D0C100421CAB /* GameCollectionViewVMs.swift in Sources */,
+				FCE003B1263FD0B10048C251 /* GlobalManagerGetter.swift in Sources */,
 				FC31CAB52603AD1B0085A59C /* TeamsVC.swift in Sources */,
 				FCAAEF3B2625F7E4004DB290 /* BigCollectionViewCell.swift in Sources */,
 				FCD2D02A261077C600DDBC8E /* TableHeaderView.swift in Sources */,
 				FC8AB10F26074CA500BF5AA4 /* LeftItemView.swift in Sources */,
 				FC00849026161FDD00448849 /* CurrentModificationCellVM.swift in Sources */,
 				FC8164B5261B6A7E00A363D4 /* CollectionView.swift in Sources */,
+				FCE003AC263FCFFD0048C251 /* GameData.swift in Sources */,
 				FC31CAB92603B0CE0085A59C /* TeamsVM.swift in Sources */,
 				FC60E5512633F59B00421CAB /* GameFinalVM.swift in Sources */,
 				FC00848526161E3300448849 /* BeReadyVM.swift in Sources */,
@@ -627,9 +685,11 @@
 				FC60E5D02635ACB900421CAB /* ImageHeaderFooter.swift in Sources */,
 				FCF4E5C92631DE82005DE536 /* QuestionCellVM.swift in Sources */,
 				FC60E5C22635936300421CAB /* ScoreView.swift in Sources */,
+				FCE003B5263FD1190048C251 /* GameSettings.swift in Sources */,
 				FC8164652618849800A363D4 /* ViewControllerWithTable.swift in Sources */,
 				FCE826AC25DAC6730045D1D2 /* UIHelpers.swift in Sources */,
 				FC31C2D925FFA9E80085A59C /* RoundTimingCellVM.swift in Sources */,
+				FCE003B3263FD0E30048C251 /* CurrentGameInfo.swift in Sources */,
 				FC8164AA261B648100A363D4 /* GameVM.swift in Sources */,
 				FC8164A6261B647800A363D4 /* GameVC.swift in Sources */,
 				FCCB6A3325FE5650006084A7 /* TeamsInGameCellVM.swift in Sources */,
