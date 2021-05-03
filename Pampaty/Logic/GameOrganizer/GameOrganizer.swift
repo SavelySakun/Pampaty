@@ -4,10 +4,6 @@ protocol GameManagerProtocol {
 	//
 }
 
-enum GameType {
-	case alias
-}
-
 class GameOrganizer {
 	//var set = GameManagerSetter()
 	var get = GameManagerGetter()

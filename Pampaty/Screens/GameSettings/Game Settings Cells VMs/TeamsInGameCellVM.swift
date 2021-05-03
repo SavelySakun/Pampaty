@@ -13,7 +13,7 @@ class TeamsInGameCellVM: CellItemVM {
 	}
 
 	override func updateCellData() {
-		title = "Команд в игре: \(Logic.manager.get.numberOfTeams())"
+		title = "Количество команд: \(Logic.manager.get.numberOfTeams())"
 		accessoryDescription = "Изменить"
 	}
 }

@@ -31,6 +31,14 @@ class GlobalManagerGetter {
 		return gameData.settings.numberOfRounds
 	}
 
+	func activeGames() -> [GameProtocol] {
+		return gameData.settings.activeGames
+	}
+
+	func activeGamesCount() -> Int {
+		return gameData.settings.activeGames.count
+	}
+
 	func currentRound() {}
 	func teamPlayingName() {}
 	func currentGameType() {}
