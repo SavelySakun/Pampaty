@@ -31,12 +31,16 @@ class GlobalManagerGetter {
 		return gameData.settings.numberOfRounds
 	}
 
-	func activeGames() -> [GameProtocol] {
-		return gameData.settings.activeGames
+	func games(state: GameState) -> [Game] {
+		return gameData.settings.games.filter { $0.state == state }
+	}
+
+	func allGames() -> [Game] {
+		return gameData.settings.games
 	}
 
 	func activeGamesCount() -> Int {
-		return gameData.settings.activeGames.count
+		return gameData.settings.games.count
 	}
 
 	func currentRound() {}

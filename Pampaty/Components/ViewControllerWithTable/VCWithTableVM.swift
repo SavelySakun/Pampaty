@@ -5,7 +5,12 @@ protocol VCWithTableProtocol {
 	var tableSections: [TableSection]? { get set }
 }
 
+protocol VCWithTableVMProtocol: AnyObject {
+	func onValuesChanged()
+}
+
 class VCWithTableVM: VCWithTableProtocol {
+	weak var delegate: VCWithTableVMProtocol?
 	var tableHeader: TableHeader?
 	var tableSections: [TableSection]?
 

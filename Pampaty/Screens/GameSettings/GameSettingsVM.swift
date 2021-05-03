@@ -27,5 +27,6 @@ class GameSettingsVM: VCWithTableVM {
 	override func updateCellsData() {
 		teamsInGameCellVM.updateCellData()
 		roundNumbersCellVM.updateCellData()
+		activeGamesCellVM.updateCellData()
 	}
 }

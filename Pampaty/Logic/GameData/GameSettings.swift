@@ -11,8 +11,9 @@ class GameSettings {
 		Team(withName: "Синие")
 	]
 
-	var activeGames: [GameProtocol] = [
-		AliasGame(),
-		CrocodileGame()
+	var games: [Game] = [
+		Game(state: .active, type: .alias, name: "Алиас", imageName: "bulb"),
+		Game(state: .disabled, type: .crocodile, name: "Крокодил", imageName: "pig"),
+		Game(state: .disabled, type: .crocodile, name: "Угадай мелодию", imageName: "pig")
 	]
 }

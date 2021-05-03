@@ -21,6 +21,12 @@ class GlobalManagerSetter {
 		gameData.settings.numberOfRounds = value
 	}
 
+	func toggleGameState(at index: Int) {
+		let currentState = gameData.settings.games[index].state
+		let newState: GameState = (currentState == .active) ? .disabled : .active
+		gameData.settings.games[index].state = newState
+	}
+
 	func roundDuration() {}
 	func modificators() {}
 }
