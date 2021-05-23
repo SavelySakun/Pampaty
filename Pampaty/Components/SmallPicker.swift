@@ -1,9 +1,17 @@
 import UIKit
 
+protocol SmallPickerDelegate: AnyObject {
+	func onSmallPickerValueChanged()
+}
+
 class SmallPicker: UIPickerView, UIPickerViewDataSource, UIPickerViewDelegate {
+
+	weak var onChangeDelegate: SmallPickerDelegate?
+
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		setupPicker()
+		selectRow(Logic.manager.get.selectedRoundDuration(), inComponent: 0, animated: false)
 	}
 
 	required init?(coder: NSCoder) {
@@ -21,20 +29,26 @@ class SmallPicker: UIPickerView, UIPickerViewDataSource, UIPickerViewDelegate {
 		1
 	}
 
-	func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-		10
-	}
-
 	func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
 		26
+	}
+
+	func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+		return GameDataHelpers.shared.roundDurationValues.count
 	}
 
 	func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
 		let pickerLabel = UILabel()
 		pickerLabel.textColor = UIColor.black
-		pickerLabel.text = "12"
+		pickerLabel.text = String(GameDataHelpers.shared.roundDurationValues[row])
 		pickerLabel.font = UIFont.systemFont(ofSize: 18)
 		pickerLabel.textAlignment = NSTextAlignment.center
 		return pickerLabel
 	}
+
+	func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+		Logic.manager.set.selectedRoundDuration(withIndex: row)
+		onChangeDelegate?.onSmallPickerValueChanged()
+	}
+	
 }

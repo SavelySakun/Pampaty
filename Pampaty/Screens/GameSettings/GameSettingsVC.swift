@@ -8,6 +8,12 @@ class GameSettingsVC: ViewControllerWithTable {
 		navigationController?.navigationBar.prefersLargeTitles = true
 	}
 
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		screenVM.updateCellsData()
+		tableView.reloadData()
+	}
+
 	override func onButtonTouch() {
 		AppDelegate.sceneDelegate?.navigationController.pushViewController(BeReadyVC(), animated: true)
 	}

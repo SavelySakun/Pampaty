@@ -35,4 +35,6 @@ class CellItemVM: CellViewModelProtocol {
 		
 		setProperties()
 	}
+
+	func updateCellData() {}
 }
